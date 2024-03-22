@@ -33,7 +33,7 @@ const GoToTopButton = () => {
 
   return (
     <button
-      className={`fixed bottom-6 right-10 flex justify-center items-center text-sm cursor-pointer opacity-0 transition duration-300 ${
+      className={`fixed bottom-6 right-8 flex justify-center items-center text-sm cursor-pointer opacity-0 transition duration-300 ${
         showButton ? "opacity-100" : ""
       } hover:text-lime-500`}
       onClick={scrollToTop}
