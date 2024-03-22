@@ -130,20 +130,12 @@ export const Data = {
   ],
   experiences: [
     {
-      title: "Web Developer and Graphics Designer",
-      org: "Fiverr.com",
+      title: "React.js Developer",
+      org: "Lala Group of Companies Rawalpindi",
       details:
-        "Complete projects with 100% positive review (rating). www.fiverr.com/saliyousafzai",
-      startDate: "Dec 2014",
-      endDate: "Continue...",
-    },
-    {
-      title: "Full stack Developer Training",
-      org: "URRAAN - Runway To Digital Flight",
-      details:
-        "Complete Complete the Tasks in the following: HTML, CSS, Bootstrap, Javascript, jQuery, PHP, MySql and WordPress",
-      startDate: "01 May 2019",
-      endDate: "30 Jun 2019",
+        "Develop Large scale websites using React.js and other technologies like HTML, CSS, Bootstrap, Javascript, Redux, Redux Toolkit",
+      startDate: "Dec 2023",
+      endDate: "Still working here",
     },
     {
       title: "React.js Developer",
@@ -154,12 +146,20 @@ export const Data = {
       endDate: "Dec 2023",
     },
     {
-      title: "React.js Developer",
-      org: "Lala Group of Companies Rawalpindi",
+      title: "Full stack Developer Training",
+      org: "URRAAN - Runway To Digital Flight",
       details:
-        "Develop Large scale websites using React.js and other technologies like HTML, CSS, Bootstrap, Javascript, Redux, Redux Toolkit",
-      startDate: "Dec 2023",
-      endDate: "Still working here",
+        "Complete Complete the Tasks in the following: HTML, CSS, Bootstrap, Javascript, jQuery, PHP, MySql and WordPress",
+      startDate: "01 May 2019",
+      endDate: "30 Jun 2019",
+    },
+    {
+      title: "Web Developer and Graphics Designer",
+      org: "Fiverr.com",
+      details:
+        "Complete projects with 100% positive review (rating). www.fiverr.com/saliyousafzai",
+      startDate: "Dec 2014",
+      endDate: "Continue...",
     },
   ],
   education: [
@@ -592,32 +592,3 @@ export const Data = {
     },
   ],
 };
-
-// Web Development Services:
-
-// Custom Web Development
-// Front-end Development
-// React Application Development
-// Single-Page Applications (SPAs)
-// Progressive Web Apps (PWAs)
-
-// Design and User Experience:
-
-// Responsive Design
-// UI/UX Design
-// Web Accessibility (a11y)
-// Cross-Browser Compatibility
-
-// Functionality and Integration:
-
-// API Integration
-// E-commerce Solutions
-// Integration with Backend Services
-// Content Management Systems (CMS)
-
-// Performance and Maintenance:
-
-// Web Performance Optimization
-// Website Maintenance
-// Code Review and Refactoring
-// Version Control and Deployment
