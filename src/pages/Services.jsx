@@ -32,7 +32,7 @@ const Services = () => {
           {Data.servicesCategories.map((services) => (
             <button
               key={services.name}
-              className={`py-2 px-4 rounded-t-lg hover:text-lime-500 ${
+              className={`py-2 px-4 rounded-t hover:text-lime-500 ${
                 activeTab === services.name
                   ? "bg-zinc-900 text-lime-500"
                   : " text-zinc-500"
@@ -46,19 +46,19 @@ const Services = () => {
       </div>
       {Data.servicesCategories.map((services) => (
         <div
-          className={`max-w-max mx-auto p-6 bg-zinc-900 rounded-2xl ${
+          className={`max-w-max mx-auto bg-zinc-900 rounded ${
             activeTab === services.name ? "block" : "hidden"
           }`}
           key={services.name}
         >
-          <h1 className="mx-auto mb-4 text-xl text-center">
+          <h1 className="mx-auto p-4 text-xl border-b border-black">
             {services.details}
           </h1>
-          <div className="flex justify-center flex-wrap gap-6">
+          <div className="flex justify-center flex-wrap gap-4 p-4">
             {services.services.map((service, index) => (
               <Card
                 key={index}
-                className="max-w-56 bg-black rounded-xl"
+                className="max-w-56 bg-black rounded"
                 onClick={() => {
                   openModal();
                   setModelData(service);
