@@ -24,7 +24,7 @@ const About = () => {
         <h2 className="text-3xl text-lime-500 py-8 mx-auto">Approach</h2>
         <div className="flex flex-wrap gap-4">
           <div className="p-4 max-w-xl flex">
-            <div className="w-[20%] flex justify-center items-center text-4xl text-lime-500">
+            <div className="w-[20%] flex justify-center items-center text-4xl text-zinc-500">
               <FaLightbulb />
             </div>
             <div className="w-[5%] border-l-[1px] border-zinc-700"></div>
@@ -37,7 +37,7 @@ const About = () => {
             </div>
           </div>
           <div className="p-4 max-w-xl flex">
-            <div className="w-[20%] flex justify-center items-center text-4xl text-lime-500">
+            <div className="w-[20%] flex justify-center items-center text-4xl text-zinc-500">
               <FiTarget />
             </div>
             <div className="w-[5%] border-l-[1px] border-zinc-700"></div>
@@ -51,7 +51,7 @@ const About = () => {
             </div>
           </div>
           <div className="p-4 max-w-xl flex">
-            <div className="w-[20%] flex justify-center items-center text-4xl text-lime-500">
+            <div className="w-[20%] flex justify-center items-center text-4xl text-zinc-500">
               <FaHandshake />
             </div>
             <div className="w-[5%] border-l-[1px] border-zinc-700"></div>
@@ -64,7 +64,7 @@ const About = () => {
             </div>
           </div>
           <div className="p-4 max-w-xl flex">
-            <div className="w-[20%] flex justify-center items-center text-4xl text-lime-500">
+            <div className="w-[20%] flex justify-center items-center text-4xl text-zinc-500">
               <FaBookReader />
             </div>
             <div className="w-[5%] border-l-[1px] border-zinc-700"></div>
