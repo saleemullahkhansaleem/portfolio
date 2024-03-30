@@ -62,14 +62,14 @@ const NavBar = ({ activeTab }) => {
         id="menu-btn"
         className={`flex md:hidden items-center justify-center rounded-full ${
           isMenuVisible ? "border" : ""
-        } z-50 fixed top-4 right-4 text-3xl w-10 h-10 cursor-pointer `}
+        } z-50 fixed top-4 right-4 text-3xl w-8 h-8 cursor-pointer `}
         onClick={toggleMenu}
       >
         {isMenuVisible ? <IoMdClose /> : <FiMenu />}
       </div>
       <nav
         id="header"
-        className={`w-full h-full md:w-auto md:h-auto fixed p-2 z-40 top-1/2 right-0 md:right-4 ${
+        className={`w-full h-full md:w-auto md:h-auto fixed p-2 z-40 top-1/2 right-0 md:right-2 xl:right-4 ${
           isMenuVisible ? "flex" : "hidden"
         } md:flex flex-col items-start md:items-center justify-evenly -translate-y-1/2 md:rounded backdrop-blur-3xl bg-black/10 md:bg-zinc-800`}
       >

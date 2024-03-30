@@ -1,13 +1,16 @@
 const Container = ({ children, id, className, full }) => {
   return (
-    <section
-      id={id}
-      className={`${
-        full ? "max-w-screen-2xl" : "max-w-screen-xl"
-      } mx-auto py-4 ${className}`}
-    >
-      {children}
-    </section>
+    <div className="flex">
+      <section
+        id={id}
+        className={`${
+          full ? "max-w-screen-2xl" : "max-w-screen-xl"
+        } mx-auto py-4 flex-1 ${className}`}
+      >
+        {children}
+      </section>
+      <div className="min-w-16 hidden md:block"></div>
+    </div>
   );
 };
 

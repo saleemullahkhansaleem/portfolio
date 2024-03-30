@@ -28,18 +28,19 @@ const Services = () => {
       <Heading text="I can" colorText="Do" />
 
       <div className="">
-        <nav className="max-w-max mx-auto">
+        <nav className="max-w-max mx-auto flex">
           {Data.servicesCategories.map((services) => (
             <button
               key={services.name}
-              className={`py-2 px-4 rounded-t hover:text-lime-500 ${
+              className={`py-2 px-4 rounded-t flex items-center gap-2 ${
                 activeTab === services.name
-                  ? "bg-zinc-900 text-lime-500"
-                  : " text-zinc-500"
+                  ? "bg-zinc-900 text-lime-500 hover:text-lime-500"
+                  : " text-zinc-500 hover:text-white"
               }`}
               onClick={() => setActiveTab(services.name)}
             >
-              {services.name}
+              {<services.icon className="text-2xl" />}{" "}
+              <span className="hidden sm:block">{services.name}</span>
             </button>
           ))}
         </nav>
