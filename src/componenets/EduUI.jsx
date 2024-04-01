@@ -10,7 +10,7 @@ const EduUI = ({ data = [] }) => {
             {data?.map((item, index) => (
               <tr className="" key={index}>
                 <td className="relative w-8">
-                  <div className="w-4 border-t absolute top-[22px] left-4"></div>
+                  <div className="w-4 border-t absolute top-[22px] left-1"></div>
                   <div className="absolute p-1 bg-zinc-900 -left-[11px] top-3">
                     <RiRadioButtonFill className="text-xs" />
                   </div>
