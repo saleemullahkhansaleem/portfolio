@@ -7,14 +7,16 @@ const Home = () => {
   return (
     <Container
       id="home"
-      className="min-h-screen flex flex-wrap justify-between"
+      className="md:min-h-screen flex flex-wrap justify-between"
     >
-      <div className="w-full sm:w-full md:w-4/12 flex">
-        <img
-          id="profile-img"
-          src="/profile.png"
-          className="w-full max-w-sm border-b m-auto"
-        />
+      <div className="w-full sm:w-full md:w-4/12 flex items-center">
+        <div className="md:w-full w-48 md:h-auto h-48 bg-black md:bg-transparent rounded overflow-hidden m-auto">
+          <img
+            id="profile-img"
+            src="/profile.png"
+            className="w-full max-w-sm border-b m-auto"
+          />
+        </div>
         {/* <SocialLinks data={Data.contactLinks} className="mt-4" /> */}
         {/* <SocialLinks className="mt-4" iconSize="lg" data={Data.socialLinks} /> */}
       </div>
