@@ -28,7 +28,7 @@ const Projects = () => {
       className="flex flex-wrap justify-evenly gap-4 items-center"
     >
       <Heading text="My" colorText="Projects" />
-      <div className="flex flex-wrap justify-center lg:flex-nowrap gap-4 mx-auto max-w-4xl lg:max-h-[450px] overflow-y-hidden">
+      <div className="flex flex-wrap justify-center md:flex-nowrap gap-4 mx-auto max-w-4xl lg:max-h-[450px] overflow-y-hidden">
         <div className="h-full flex flex-col gap-4">
           <Card
             buttonText="View"
