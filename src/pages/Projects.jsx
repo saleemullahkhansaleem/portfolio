@@ -28,13 +28,18 @@ const Projects = () => {
       className="flex flex-wrap justify-evenly gap-4 items-center"
     >
       <Heading text="My" colorText="Projects" />
-      <div className="flex flex-wrap justify-center lg:flex-nowrap gap-4 mx-auto max-w-4xl max-h-[450px] overflow-y-hidden">
+      <div className="flex flex-wrap justify-center lg:flex-nowrap gap-4 mx-auto max-w-4xl lg:max-h-[450px] overflow-y-hidden">
         <div className="h-full flex flex-col gap-4">
           <Card
             buttonText="View"
             className="min-w-60"
             onClick={() => {
-              setProject(project);
+              setProject({
+                img: "project1.png",
+                title: "Project One",
+                description:
+                  "This is the project description for the project with the project description",
+              });
               openModal();
             }}
           >
@@ -48,7 +53,12 @@ const Projects = () => {
             buttonText="View"
             className=""
             onClick={() => {
-              setProject(project);
+              setProject({
+                img: "project-2.png",
+                title: "Project Two",
+                description:
+                  "This is the project description for the project with the project description",
+              });
               openModal();
             }}
           >
@@ -65,7 +75,12 @@ const Projects = () => {
             buttonText="View"
             className="min-w-60"
             onClick={() => {
-              setProject(project);
+              setProject({
+                img: "project3.png",
+                title: "Project Three",
+                description:
+                  "This is the project description for the project with the project description",
+              });
               openModal();
             }}
           >
@@ -79,11 +94,11 @@ const Projects = () => {
         <div className="h-full flex flex-col gap-4">
           <Card
             buttonText="View"
-            className=""
+            className="h-1/2"
             onClick={() => {
               setProject({
-                img: "project-1.png",
-                title: "Project One",
+                img: "project-9.webp",
+                title: "Vida Mates",
                 description:
                   "This is the project description for the project with the project description",
               });
@@ -92,12 +107,12 @@ const Projects = () => {
           >
             <img
               className="scale-100 group-hover/card:scale-110 ease-in duration-300"
-              src="project-1.png"
+              src="project-9.webp"
               alt="project"
             />
           </Card>
           <div className="flex gap-4">
-            <div className="h-full w-1/2 flex flex-col gap-4">
+            <div className="w-full flex flex-col gap-4">
               <Card
                 buttonText="View"
                 className=""
@@ -129,7 +144,7 @@ const Projects = () => {
             </div>
             <Card
               buttonText="View"
-              className="max-w-sm w-1/2"
+              className="max-w-sm"
               onClick={() => {
                 setProject(project);
                 openModal();
@@ -185,7 +200,7 @@ const Projects = () => {
                   <FaGithub /> <span>View Code</span>
                 </Button>
               </div>
-              <img src={project?.img} alt={project?.title} />
+              <img className="w-full" src={project?.img} alt={project?.title} />
             </div>
             <p className="mt-2 text-zinc-500">{project?.description}</p>
           </div>
