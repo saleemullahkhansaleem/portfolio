@@ -19,7 +19,7 @@ const EduUI = ({ data = [] }) => {
                   <p className="text-sm text-lime-500">
                     {item.startDate} {item.endDate ? " - " : ""} {item.endDate}
                   </p>
-                  <h4 className="uppercase text-xl py-1">{item.title}</h4>
+                  <h3 className="uppercase text-xl py-1">{item.title}</h3>
                   <p>
                     <span className="text-lime-500 text-lg">@</span>{" "}
                     <span className="">{item.org}</span>

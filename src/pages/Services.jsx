@@ -68,7 +68,7 @@ const Services = () => {
                 buttonText="View"
               >
                 <div className="p-6">
-                  <h4 className="text-xl">{service.name}</h4>
+                  <h3 className="text-xl">{service.name}</h3>
                   <p className="mt-4 text-zinc-500">{service.description}</p>
                 </div>
               </Card>
