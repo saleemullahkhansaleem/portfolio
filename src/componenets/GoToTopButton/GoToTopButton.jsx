@@ -33,6 +33,7 @@ const GoToTopButton = () => {
 
   return (
     <button
+      aria-label="Goto Top"
       className={`fixed bottom-6 right-8 flex justify-center items-center text-sm cursor-pointer opacity-0 transition duration-300 ${
         showButton ? "opacity-100" : ""
       } hover:text-lime-500`}
