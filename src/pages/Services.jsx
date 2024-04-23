@@ -53,9 +53,9 @@ const Services = () => {
           }`}
           key={services.name}
         >
-          <h1 className="mx-auto p-4 text-xl border-b border-black">
+          <h2 className="mx-auto p-4 text-xl border-b border-black">
             {services.details}
-          </h1>
+          </h2>
           <div className="flex justify-center flex-wrap gap-4 p-4">
             {services.services.map((service, index) => (
               <Card
