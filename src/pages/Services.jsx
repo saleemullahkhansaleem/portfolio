@@ -31,6 +31,7 @@ const Services = () => {
         <nav className="max-w-max mx-auto flex">
           {Data.servicesCategories.map((services) => (
             <button
+              aria-label={services?.name}
               key={services.name}
               className={`py-2 px-4 rounded-t flex items-center gap-2 ${
                 activeTab === services.name
