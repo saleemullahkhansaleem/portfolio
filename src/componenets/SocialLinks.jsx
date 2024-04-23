@@ -3,6 +3,7 @@ const SocialLinks = ({ className = "", iconSize = "xl", data = [] }) => {
     <div className={`flex justify-between w-full ${className}`}>
       {data?.map((item) => (
         <a
+          aria-label={item.name}
           href={item.url}
           key={item.name}
           target="blank"
