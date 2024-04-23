@@ -29,7 +29,7 @@ const About = () => {
             </div>
             <div className="w-[5%] border-l-[1px] border-zinc-700"></div>
             <div className="about-details-box w-3/4">
-              <h4 className="text-xl">Innovation</h4>
+              <h3 className="text-xl">Innovation</h3>
               <p className=" text-zinc-500">
                 I thrive on the latest trends and tech. This keeps me armed with
                 innovative solutions that keep your project modern and engaging.
@@ -42,7 +42,7 @@ const About = () => {
             </div>
             <div className="w-[5%] border-l-[1px] border-zinc-700"></div>
             <div className="about-details-box w-3/4">
-              <h4 className="text-xl">User-Centric</h4>
+              <h3 className="text-xl">User-Centric</h3>
               <p className=" text-zinc-500">
                 Interfaces should be intuitive and beautiful. I dig into user
                 behavior insights to create seamless and visually pleasing
@@ -56,7 +56,7 @@ const About = () => {
             </div>
             <div className="w-[5%] border-l-[1px] border-zinc-700"></div>
             <div className="about-details-box w-3/4">
-              <h4 className="text-xl">Collaboration</h4>
+              <h3 className="text-xl">Collaboration</h3>
               <p className=" text-zinc-500">
                 Your input is golden. I see every project as a team effort,
                 combining your vision with my skills for outstanding results.
@@ -69,7 +69,7 @@ const About = () => {
             </div>
             <div className="w-[5%] border-l-[1px] border-zinc-700"></div>
             <div className="about-details-box w-3/4">
-              <h4 className="text-xl">Learning</h4>
+              <h3 className="text-xl">Learning</h3>
               <p className=" text-zinc-500">
                 Tech evolves, and so do I. I'm committed to learning and
                 adapting to deliver timeless solutions.
