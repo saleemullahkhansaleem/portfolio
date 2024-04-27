@@ -4,10 +4,12 @@ const Button = ({
   onClick,
   href,
   fill,
+  type = "button",
 }) => {
   return (
     <a href={href} className="">
       <button
+        type={type}
         onClick={onClick}
         className={`outline-none py-2 px-4 ${
           fill

@@ -7,33 +7,52 @@ import { IoMdMail } from "react-icons/io";
 import Input from "../componenets/Input";
 import SocialLinks from "../componenets/SocialLinks";
 import { Data } from "../Data";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {}, []);
+
   return (
     <Container id="contact" full className="flex flex-col justify-center">
       <Heading text="Let's" colorText="Talk Together" />
       <div className="p-4 w-full mx-auto flex flex-wrap md:flex-nowrap items-center justify-between">
         <div className="w-full max-w-3xl">
-          <form action="#">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const { name, email, message } = e.target;
+              console.log("form_event: ", {
+                name: name.value,
+                email: email.value,
+                message: message.value,
+              });
+            }}
+          >
             <div className="flex flex-wrap sm:flex-nowrap md:flex-wrap lg:flex-nowrap gap-4">
               <Input
+                required
+                name="name"
                 type="text"
                 placeholder="Enter your name"
                 className="h-12 w-full"
               />
               <Input
+                required
+                name="email"
                 className="h-12 w-full"
-                type="text"
+                type="email"
                 placeholder="Enter your email"
               />
             </div>
             <Input
+              required
+              name="message"
               className="min-h-28 mt-4"
               type="textarea"
               placeholder="Enter your message"
             />
             <div className="mt-4 float-right">
-              <Button>Send Now</Button>
+              <Button type="submit">Send Now</Button>
             </div>
           </form>
         </div>
