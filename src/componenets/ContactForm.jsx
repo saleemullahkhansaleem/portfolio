@@ -1,42 +1,56 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "./Button";
 import Input from "./Input";
 import emailjs from "@emailjs/browser";
+import Spinner from "./Spinner";
+import { FaCheckCircle } from "react-icons/fa";
+import Toast from "./Toast";
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState(null);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_6taoynp", "template_e5o2b1e", form.current, {
-        publicKey: "YQG6KBIbjLSpWTI2e",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    setLoading(true);
+    console.log("innnnn");
+    try {
+      emailjs
+        .sendForm("service_6taoynp", "template_e5o2b1e", form.current, {
+          publicKey: "YQG6KBIbjLSpWTI2e",
+        })
+        .then(
+          () => {
+            setMessage({ error: false, message: "Message sent successfully!" });
+            form.current.reset();
+            setLoading(false);
+            setTimeout(() => {
+              setMessage(null);
+            }, 5000);
+          },
+          (error) => {
+            setMessage({ error: true, message: "Some thing went wrong!" });
+            console.error(error);
+            setLoading(false);
+            setTimeout(() => {
+              setMessage(null);
+            }, 5000);
+          }
+        );
+    } catch (error) {
+      setMessage({ error: true, message: "Some thing went wrong!" });
+      console.error(error);
+      setLoading(false);
+      setTimeout(() => {
+        setMessage(null);
+      }, 5000);
+    }
   };
 
   return (
-    <form
-      ref={form}
-      onSubmit={sendEmail}
-      // onSubmit={(e) => {
-      //   e.preventDefault();
-      //   const { name, email, message } = e.target;
-      //   console.log("form_event: ", {
-      //     name: name.value,
-      //     email: email.value,
-      //     message: message.value,
-      //   });
-      // }}
-    >
+    <form ref={form} onSubmit={sendEmail}>
       <div className="flex flex-wrap sm:flex-nowrap md:flex-wrap lg:flex-nowrap gap-4">
         <Input
           required
@@ -60,12 +74,13 @@ const ContactForm = () => {
         type="textarea"
         placeholder="Enter your message"
       />
+      {message && <Toast error={message?.error}>{message.message}</Toast>}
       <div className="mt-4">
         <Button
           className="w-full sm:w-auto sm:float-right md:w-full lg:w-auto lg:float-right"
           type="submit"
         >
-          Send Now
+          {loading ? <Spinner /> : "Send Now"}
         </Button>
       </div>
     </form>
