@@ -1,13 +1,12 @@
 import Container from "../componenets/Container";
 import Heading from "../componenets/Heading";
-import Button from "../componenets/Button";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
-import Input from "../componenets/Input";
 import SocialLinks from "../componenets/SocialLinks";
 import { Data } from "../Data";
 import { useEffect } from "react";
+import ContactForm from "../componenets/ContactForm";
 
 const Contact = () => {
   useEffect(() => {}, []);
@@ -15,53 +14,15 @@ const Contact = () => {
   return (
     <Container id="contact" full className="flex flex-col justify-center">
       <Heading text="Let's" colorText="Talk Together" />
-      <div className="p-4 w-full mx-auto flex flex-wrap md:flex-nowrap items-center justify-between">
-        <div className="w-full max-w-3xl">
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              const { name, email, message } = e.target;
-              console.log("form_event: ", {
-                name: name.value,
-                email: email.value,
-                message: message.value,
-              });
-            }}
-          >
-            <div className="flex flex-wrap sm:flex-nowrap md:flex-wrap lg:flex-nowrap gap-4">
-              <Input
-                required
-                name="name"
-                type="text"
-                placeholder="Enter your name"
-                className="h-12 w-full"
-              />
-              <Input
-                required
-                name="email"
-                className="h-12 w-full"
-                type="email"
-                placeholder="Enter your email"
-              />
-            </div>
-            <Input
-              required
-              name="message"
-              className="min-h-28 mt-4"
-              type="textarea"
-              placeholder="Enter your message"
-            />
-            <div className="mt-4 float-right">
-              <Button type="submit">Send Now</Button>
-            </div>
-          </form>
-        </div>
-
+      <div className="p-4 w-full mx-auto flex flex-wrap md:flex-nowrap items-center justify-between gap-8">
         <SocialLinks
           className="max-w-xl mx-auto px-8"
           iconSize="2xl"
           data={Data.contactLinks}
         />
+        <div className="w-full max-w-3xl">
+          <ContactForm />
+        </div>
       </div>
       <div className="w-full flex flex-wrap md:flex-nowrap items-center justify-center gap-4">
         <div className="text-lg flex gap-2">
