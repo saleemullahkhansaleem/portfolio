@@ -74,7 +74,7 @@ const ContactForm = () => {
         type="textarea"
         placeholder="Enter your message"
       />
-      {message && <Toast error={message?.error}>{message.message}</Toast>}
+      {!message && <Toast error={message?.error}>{message?.message}</Toast>}
       <div className="mt-4">
         <Button
           className="w-full sm:w-auto sm:float-right md:w-full lg:w-auto lg:float-right"
