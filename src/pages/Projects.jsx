@@ -58,7 +58,9 @@ const Projects = () => {
           <div>
             <div className="relative">
               <div className="flex flex-wrap justify-between items-center sticky right-0 top-0 p-2 w-full backdrop-blur-sm bg-black/30">
-                <p className="px-2 text-zinc-500">{project.tagline}</p>
+                <p className="px-2 text-zinc-500 uppercase">
+                  {project.tagline}
+                </p>
                 <div className="flex gap-2 flex-wrap">
                   <Button
                     className="flex gap-2 items-center"
@@ -81,7 +83,19 @@ const Projects = () => {
                 alt={project?.title}
               />
             </div>
-            <p className="mt-2 text-zinc-500">{project?.description}</p>
+            <p className="mt-2 text-white py-2">Description: </p>
+            <p className="text-zinc-500">{project?.description}</p>
+            <p className="mt-2 text-white py-2">Technologies used: </p>
+            <div className="flex gap-2 flex-wrap">
+              {project?.usedTools?.map((tool, index) => (
+                <span
+                  key={index}
+                  className="bg-zinc-800 text-white rounded py-1 px-4 flex gap-2 items-center"
+                >
+                  {<tool.icon className={``} />} <span>{tool?.name}</span>
+                </span>
+              ))}
+            </div>
           </div>
         )}
       </Modal>

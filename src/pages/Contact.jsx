@@ -30,12 +30,16 @@ const Contact = () => {
           <p className="text-sm"> Shinkiari, P.O #21140 Mansehra, Pakistan</p>
         </div>
         <p className="hidden md:block">|</p>
-        <a href="tel:+923405045889" className="text-lg flex gap-2">
+        <a href="tel:+923405045889" className="text-lg flex gap-2" title="Call">
           <IoCall className=" text-lime-500" />
-          <p className="text-sm "> +92 340 5045 889</p>
+          <p className="text-sm"> +92 340 5045 889</p>
         </a>
         <p className="hidden md:block">|</p>
-        <a href="mailto:salikhanswati@gmail.com" className="text-lg flex gap-2">
+        <a
+          href="mailto:salikhanswati@gmail.com"
+          className="text-lg flex gap-2"
+          title="Send an email"
+        >
           <IoMdMail className=" text-lime-500" />
           <p className="text-sm"> salikhanswati@gmail.com</p>
         </a>
