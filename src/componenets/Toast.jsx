@@ -1,10 +1,10 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { MdError } from "react-icons/md";
 
-const Toast = ({ children, error }) => {
+const Toast = ({ children, error, className = "" }) => {
   return (
     <div
-      className={`flex gap-4 items-center px-4 py-2 my-2 border w-max mx-auto rounded-full ${
+      className={`${className} flex gap-4 items-center py-2 px-4 border w-max rounded ${
         error ? "border-red-500" : "border-green-500"
       }`}
     >

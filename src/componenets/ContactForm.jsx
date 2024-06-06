@@ -74,12 +74,16 @@ const ContactForm = () => {
         type="textarea"
         placeholder="Enter your message"
       />
-      {!message && <Toast error={message?.error}>{message?.message}</Toast>}
-      <div className="mt-4">
-        <Button
-          className="w-full sm:w-auto sm:float-right md:w-full lg:w-auto lg:float-right"
-          type="submit"
-        >
+      <div className="mt-4 flex flex-wrap sm:flex-nowrap md:flex-wrap lg:flex-nowrap justify-end gap-4">
+        {message && (
+          <Toast
+            className="w-full sm:w-auto md:w-full lg:w-auto"
+            error={message?.error}
+          >
+            {message?.message}Success
+          </Toast>
+        )}
+        <Button className="w-full sm:w-auto md:w-full lg:w-auto" type="submit">
           {loading ? <Spinner /> : "Send Now"}
         </Button>
       </div>
