@@ -1,9 +1,10 @@
 import React from "react";
 import { MdZoomOutMap } from "react-icons/md";
 
-const Card = ({ children, className, onClick, buttonText }) => {
+const Card = ({ children, className, onClick, buttonText, title }) => {
   return (
     <div
+      title={title}
       className={`group/card cursor-pointer relative w-full min-h-20 overflow-hidden ${className}`}
       onClick={onClick}
     >

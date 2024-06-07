@@ -10,13 +10,14 @@ const Skills = () => {
       id="skills"
       className="flex flex-wrap justify-evenly items-center"
     >
-      <Heading text="My" colorText="Wealth" />
+      <Heading title="Skills" text="My" colorText="Wealth" />
       <div className="mt-5">
         <div className="flex justify-center gap-4 flex-wrap max-w-4xl">
           {Data.skills.map((item) => (
             <div
+              title={item?.name}
               className="bg-zinc-900 skill-box flex flex-col justify-evenly items-center p-4 rounded-full h-60"
-              key={item.name}
+              key={item?.name}
             >
               <div className="flex flex-col items-center justify-center gap-2 m-auto">
                 {<item.icon className={`text-5xl ${item?.iconColor}`} />}

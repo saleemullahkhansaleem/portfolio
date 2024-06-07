@@ -5,7 +5,7 @@ import { IoGrid, IoOptions } from "react-icons/io5";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { PiStudentFill } from "react-icons/pi";
 import { MdMessage } from "react-icons/md";
-import { IoMdClose } from "react-icons/io";
+import { IoMdClose, IoMdPricetags } from "react-icons/io";
 
 const NavBar = ({ activeTab }) => {
   const navLinks = [
@@ -43,6 +43,11 @@ const NavBar = ({ activeTab }) => {
       name: "Educations",
       id: "educations",
       icon: PiStudentFill,
+    },
+    {
+      name: "Pricing",
+      id: "pricing",
+      icon: IoMdPricetags,
     },
     {
       name: "Contact",

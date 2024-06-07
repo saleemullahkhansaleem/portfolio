@@ -13,7 +13,7 @@ const Contact = () => {
 
   return (
     <Container id="contact" full className="flex flex-col justify-center">
-      <Heading text="Let's" colorText="Talk Together" />
+      <Heading title="Contact me" text="Let's" colorText="Talk Together" />
       <div className="p-4 w-full mx-auto flex flex-wrap md:flex-nowrap items-center justify-between gap-8">
         <SocialLinks
           className="max-w-xl mx-auto px-8"

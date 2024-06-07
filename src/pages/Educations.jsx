@@ -6,7 +6,7 @@ import { Data } from "../Data";
 const Educations = () => {
   return (
     <Container id="educations" className="flex flex-col justify-center">
-      <Heading text="My" colorText="Educations" />
+      <Heading title="Education" text="My" colorText="Educations" />
       <EduUI data={Data.education} />
       <h2 className="text-4xl text-lime-500 py-8">Awards</h2>
       <EduUI data={Data.awards} />

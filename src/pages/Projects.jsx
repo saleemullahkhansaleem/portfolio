@@ -26,11 +26,12 @@ const Projects = () => {
       id="projects"
       className="flex flex-wrap justify-evenly gap-4 items-center"
     >
-      <Heading text="My" colorText="Projects" />
+      <Heading title='Some on going projects' text="My" colorText="Projects" />
       <div>
         <div className="flex flex-wrap justify-center gap-4 mx-auto max-w-4xl">
           {Data.projects.map((project, index) => (
             <Card
+              title={project?.name}
               key={index}
               buttonText="View"
               className="max-w-72 w-72"

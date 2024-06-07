@@ -6,7 +6,7 @@ import EduUI from "../componenets/EduUI";
 const Experiences = () => {
   return (
     <Container id="experiences" className="flex flex-col justify-center">
-      <Heading text="My" colorText="Experiences" />
+      <Heading title="Work Experience" text="My" colorText="Experiences" />
       <EduUI data={Data.experiences} />
     </Container>
   );

@@ -9,6 +9,7 @@ import Services from "./pages/Services";
 import Skills from "./pages/Skills";
 import NavBar from "./componenets/NavBar";
 import GoToTopButton from "./componenets/GoToTopButton/GoToTopButton";
+import PricingPage from "./pages/PricingPage";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -48,8 +49,9 @@ function App() {
       </div>
       <Educations />
       <div className="w-full  bg-black">
-        <Contact />
+        <PricingPage />
       </div>
+      <Contact />
       <GoToTopButton />
     </div>
   );

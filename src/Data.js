@@ -615,4 +615,89 @@ export const Data = {
       ],
     },
   ],
+  pricing: {
+    plans: [
+      {
+        name: "Basic",
+        features: [
+          "Single Page Application (SPA)",
+          "Responsive Design using Tailwind CSS",
+          "Basic SEO Setup",
+          "Contact Form",
+          "Deployment Assistance",
+        ],
+        price: "$ 500",
+      },
+      {
+        name: "Standard",
+        features: [
+          "Multi-page Application",
+          "All features from Basic Plan",
+          "Advanced SEO Optimization",
+          "API Integration",
+          "Basic Authentication",
+          "Performance Optimization",
+          "Custom Components",
+        ],
+        price: "$ 1,200",
+      },
+      {
+        name: "Premium",
+        features: [
+          "E-commerce Integration",
+          "All features from Standard Plan",
+          "Custom Backend Services",
+          "User Role Management",
+          "Advanced Animations & Interactions",
+          "Progressive Web App (PWA) Setup",
+          "Priority Support",
+        ],
+        price: "$ 2,500",
+      },
+      {
+        name: "Enterprise",
+        features: [
+          "Custom Enterprise Solutions",
+          "All features from Premium Plan",
+          "Scalable Microservices Architecture",
+          "Dedicated DevOps Support",
+          "Continuous Integration & Continuous Deployment (CI/CD)",
+          "Detailed Analytics and Reporting",
+          "Ongoing Maintenance and Support",
+        ],
+        price: "Starting from $ 5,000",
+      },
+    ],
+    additionalServices: [
+      {
+        service: "Additional Page",
+        price: "$ 150 per page",
+      },
+      {
+        service: "Custom Feature Development",
+        price: "Starting from $200",
+      },
+      {
+        service: "Content Management System (CMS)",
+        price: "$800",
+      },
+      {
+        service: "Ongoing Maintenance",
+        price: "$100 per month",
+      },
+      {
+        service: "UI/UX Design Consultation",
+        price: "$75 per hour",
+      },
+      {
+        service: "Website Redesign",
+        price: "Starting from $1,000",
+      },
+    ],
+    notes: [
+      "Prices are estimates and may vary based on the specific requirements of the project.",
+      "For more complex or custom features, a detailed quote will be provided after an initial consultation.",
+      "Discounts available for long-term contracts and recurring projects.",
+    ],
+  },
 };

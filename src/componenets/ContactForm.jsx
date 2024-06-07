@@ -83,7 +83,7 @@ const ContactForm = () => {
             {message?.message}Success
           </Toast>
         )}
-        <Button className="w-full sm:w-auto md:w-full lg:w-auto" type="submit">
+        <Button className="w-full sm:w-auto md:w-full lg:w-auto" type="submit" title='Send'>
           {loading ? <Spinner /> : "Send Now"}
         </Button>
       </div>

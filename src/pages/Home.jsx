@@ -12,6 +12,7 @@ const Home = () => {
       <div className="w-full sm:w-full md:w-4/12 flex items-center">
         <div className="md:w-full w-48 md:h-auto h-48 bg-black md:bg-transparent rounded overflow-hidden m-auto">
           <img
+            title="Mr Saleem"
             alt="Profile Image"
             id="profile-img"
             src="/profile.png"

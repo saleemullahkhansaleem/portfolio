@@ -8,7 +8,7 @@ const Input = ({
 }) => {
   return (
     <input
-      className={`w-full outline-none text-base bg-zinc-900 p-4 resize-none rounded ${className}`}
+      className={`w-full outline-none text-base bg-black p-4 resize-none rounded ${className}`}
       name={name}
       required={required}
       type={type}

@@ -7,7 +7,7 @@ import Button from "../componenets/Button";
 const About = () => {
   return (
     <Container id="about" className="p-4">
-      <Heading text="About" colorText="Saleem" />
+      <Heading title="Who I am" text="About" colorText="Saleem" />
       <div className="mx-auto">
         <div className="mx-auto text-zinc-500">
           <p>
@@ -84,7 +84,9 @@ const About = () => {
           <br />
         </p>
         <div className="text-center">
-          <Button href="#contact">Get in Touch</Button>
+          <Button href="#contact" title="Contact">
+            Get in Touch
+          </Button>
         </div>
       </div>
     </Container>

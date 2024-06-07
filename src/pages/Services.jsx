@@ -25,12 +25,13 @@ const Services = () => {
 
   return (
     <Container full id="services" className="">
-      <Heading text="I can" colorText="Do" />
+      <Heading title="Services" text="I can" colorText="Do" />
 
       <div className="">
         <nav className="max-w-max mx-auto flex">
           {Data.servicesCategories.map((services) => (
             <button
+              title={services?.name}
               aria-label={services?.name}
               key={services.name}
               className={`py-2 px-4 rounded-t flex items-center gap-2 ${
@@ -59,6 +60,7 @@ const Services = () => {
           <div className="flex justify-center flex-wrap gap-4 p-4">
             {services.services.map((service, index) => (
               <Card
+                title="View detail"
                 key={index}
                 className="max-w-56 bg-black rounded"
                 onClick={() => {
