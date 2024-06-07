@@ -63,12 +63,17 @@ const Projects = () => {
                 </p>
                 <div className="flex gap-2 flex-wrap">
                   <Button
+                    title="Live"
+                    target="_blank"
                     className="flex gap-2 items-center"
                     href={project?.url}
                   >
                     <BsFillGrid1X2Fill /> <span>View Live</span>
                   </Button>
                   <Button
+                    title="Github"
+                    href={project?.gitLink}
+                    target="_blank"
                     fill
                     className="flex gap-2 items-center"
                     onClick={closeModal}

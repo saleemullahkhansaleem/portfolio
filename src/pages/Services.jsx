@@ -82,15 +82,27 @@ const Services = () => {
           <div className="w-full md:w-1/2">
             <p className="mt-4 text-lg text-lime-500">Contact Me:</p>
             <div className="flex flex-wrap gap-2">
-              <Button className="flex gap-2 items-center">
+              <Button
+                target="_blank"
+                href="https://wa.me/+923405045889"
+                className="flex gap-2 items-center"
+              >
                 <FaWhatsapp />
                 <span>WhatsApp</span>
               </Button>
-              <Button className="flex gap-2 items-center">
+              <Button
+                target="_blank"
+                href="mailto:salikhanswati@gmail.com"
+                className="flex gap-2 items-center"
+              >
                 <IoMail />
                 <span>Mail</span>
               </Button>
-              <Button className="flex gap-2 items-center">
+              <Button
+                target="_blank"
+                href="https://join.skype.com/invite/pXBYBspa6eUI"
+                className="flex gap-2 items-center"
+              >
                 <FaSkype />
                 <span>Skype</span>
               </Button>
@@ -99,15 +111,27 @@ const Services = () => {
           <div className="w-full md:w-1/2">
             <p className="mt-4 text-lg text-lime-500">Hire Me:</p>
             <div className="flex flex-wrap gap-2">
-              <Button className="flex gap-2 items-center">
+              <Button
+                target="_blank"
+                href="https://www.upwork.com/freelancers/~0181decb984c651d39"
+                className="flex gap-2 items-center"
+              >
                 <SiUpwork className="" />
                 <span>Upwork</span>
               </Button>
-              <Button className="flex gap-2 items-center">
+              <Button
+                target="_blank"
+                href="https://fiverr.com/saliyousafzai"
+                className="flex gap-2 items-center"
+              >
                 <TbBrandFiverr />
                 <span>Fiverr</span>
               </Button>
-              <Button className="flex gap-2 items-center">
+              <Button
+                target="_blank"
+                href="https://www.freelancer.com/u/saleemyousafzai"
+                className="flex gap-2 items-center"
+              >
                 <SiFreelancer />
                 <span>Freelancer</span>
               </Button>

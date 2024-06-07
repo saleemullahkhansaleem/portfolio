@@ -4,11 +4,14 @@ const Button = ({
   onClick,
   href,
   fill,
+  target = "_self",
+  title,
   type = "button",
 }) => {
   return href ? (
-    <a href={href} className="">
+    <a href={href} target={target} className="">
       <button
+        title={title}
         type={type}
         onClick={onClick}
         className={`outline-none py-2 px-4 ${
@@ -22,6 +25,7 @@ const Button = ({
     </a>
   ) : (
     <button
+      title={title}
       type={type}
       onClick={onClick}
       className={`outline-none py-2 px-4 ${
