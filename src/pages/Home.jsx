@@ -23,7 +23,7 @@ const Home = () => {
         {/* <SocialLinks className="mt-4" iconSize="lg" data={Data.socialLinks} /> */}
       </div>
       <div className="w-full md:w-8/12 flex flex-col justify-center gap-10 p-8">
-        <h1 className="text-4xl lg:text-6xl leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
           Hi From <br />
           <span className="text-lime-500">Saleemullah Khan Saleem,</span>
           <br />

@@ -76,21 +76,21 @@ const NavBar = ({ activeTab }) => {
         id="header"
         className={`w-full h-full md:w-auto md:h-auto fixed p-2 z-40 top-1/2 right-0 md:right-2 xl:right-4 ${
           isMenuVisible ? "flex" : "hidden"
-        } md:flex flex-col items-start md:items-center justify-evenly -translate-y-1/2 md:rounded backdrop-blur-3xl bg-black/10 md:bg-zinc-800`}
+        } md:flex flex-col items-start md:items-center justify-center -translate-y-1/2 md:rounded backdrop-blur-3xl bg-black/10 md:bg-zinc-800`}
       >
         {navLinks.map((link) => (
           <a
             key={link.name}
             href={`#${link.id}`}
             onClick={() => setMenuVisibility(false)}
-            className={`group py-4 px-2 flex items-end md:justify-center active w-full md:bg-transparent hover:bg-lime-500 md:hover:bg-transparent text-white ${
+            className={`group py-4 px-2 flex md:justify-center items-center w-full md:bg-transparent hover:bg-zinc-800 md:hover:bg-transparent text-white ${
               activeTab === link.id
-                ? "md:text-lime-500 bg-lime-500"
-                : "md:text-white bg-transparent"
+                ? "md:text-lime-500 bg-zinc-800"
+                : "md:text-zinc-500 hover:text-white bg-transparent"
             }`}
           >
             <span
-              className={`relative text-lg transition-all ease-in duration-200 group-hover:md:text-lime-500`}
+              className={`relative text-lg transition-all ease-in duration-200`}
             >
               {<link.icon />}
             </span>

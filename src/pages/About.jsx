@@ -3,6 +3,8 @@ import Container from "../componenets/Container";
 import Heading from "../componenets/Heading";
 import { FiTarget } from "react-icons/fi";
 import Button from "../componenets/Button";
+import { MdMessage } from "react-icons/md";
+import { IoMdPricetags } from "react-icons/io";
 
 const About = () => {
   return (
@@ -83,9 +85,22 @@ const About = () => {
           full-on collaborations. <br />
           <br />
         </p>
-        <div className="text-center">
-          <Button href="#contact" title="Contact">
-            Get in Touch
+        <div className="flex flex-wrap justify-center gap-2">
+          <Button
+            fill
+            href="#contact"
+            title="Contact"
+            className="flex gap-2 items-center"
+          >
+            <MdMessage className="text-lg" /> <span>Get in Touch</span>
+          </Button>
+          <Button
+            href="#pricing"
+            title="Pricing"
+            className="flex gap-2 items-center"
+          >
+            <IoMdPricetags className="text-lg" />{" "}
+            <span>Check pricing plans</span>
           </Button>
         </div>
       </div>

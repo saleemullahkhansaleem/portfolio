@@ -2,7 +2,7 @@ import Container from "../componenets/Container";
 import Heading from "../componenets/Heading";
 import { FaGithub } from "react-icons/fa";
 import { Data } from "../Data";
-import Modal from "../componenets/Model";
+import Modal from "../componenets/Modal";
 import { useState } from "react";
 import Button from "../componenets/Button";
 import { BsFillGrid1X2Fill } from "react-icons/bs";
@@ -26,7 +26,7 @@ const Projects = () => {
       id="projects"
       className="flex flex-wrap justify-evenly gap-4 items-center"
     >
-      <Heading title='Some on going projects' text="My" colorText="Projects" />
+      <Heading title="Some on going projects" text="My" colorText="Projects" />
       <div>
         <div className="flex flex-wrap justify-center gap-4 mx-auto max-w-4xl">
           {Data.projects.map((project, index) => (
@@ -34,7 +34,7 @@ const Projects = () => {
               title={project?.name}
               key={index}
               buttonText="View"
-              className="max-w-72 w-72"
+              className="sm:max-w-72 sm:w-72 mx-2 sm:mx-0"
               onClick={() => {
                 setProject(project);
                 openModal();

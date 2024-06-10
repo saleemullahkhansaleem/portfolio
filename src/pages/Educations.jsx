@@ -8,9 +8,9 @@ const Educations = () => {
     <Container id="educations" className="flex flex-col justify-center">
       <Heading title="Education" text="My" colorText="Educations" />
       <EduUI data={Data.education} />
-      <h2 className="text-4xl text-lime-500 py-8">Awards</h2>
+      <h2 className="text-4xl text-lime-500 py-8 pl-4">Awards</h2>
       <EduUI data={Data.awards} />
-      <h2 className="text-4xl text-lime-500 py-8">Certificates</h2>
+      <h2 className="text-4xl text-lime-500 py-8 pl-4">Certificates</h2>
       <EduUI data={Data.certificates} />
     </Container>
   );

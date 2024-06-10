@@ -4,7 +4,7 @@ import { Data } from "../Data";
 import Button from "../componenets/Button";
 import { FaArrowDown, FaArrowUp, FaSkype, FaWhatsapp } from "react-icons/fa";
 import Card from "../componenets/Card";
-import Modal from "../componenets/Model";
+import Modal from "../componenets/Modal";
 import { useState } from "react";
 import { SiFreelancer, SiUpwork } from "react-icons/si";
 import { TbBrandFiverr } from "react-icons/tb";
@@ -54,7 +54,7 @@ const Services = () => {
           }`}
           key={services.name}
         >
-          <h2 className="mx-auto p-4 text-xl border-b border-black">
+          <h2 className="mx-auto p-4 text-xl border-b border-black text-zinc-500">
             {services.details}
           </h2>
           <div className="flex justify-center flex-wrap gap-4 p-4">
@@ -62,7 +62,7 @@ const Services = () => {
               <Card
                 title="View detail"
                 key={index}
-                className="max-w-56 bg-black rounded"
+                className="sm:max-w-56 bg-black rounded"
                 onClick={() => {
                   openModal();
                   setModelData(service);
