@@ -716,4 +716,34 @@ export const Data = {
       "Discounts available for long-term contracts and recurring projects.",
     ],
   },
+  testimonials: [
+    {
+      name: "Nekiani Chelle",
+      location: "United States-us",
+      feedback:
+        "First time working with seller won't be my last. He was fast, efficient and has fair rates. Thank you Saleem.",
+      photo: "feedback/nekianichelle.webp",
+    },
+    {
+      name: "Syed Ali Shah",
+      location: "Pakistan-pk",
+      feedback:
+        "Absolutely fantastic service! Quick turnaround and exceeded my expectations. Highly recommend.",
+      photo: "feedback/ali.png",
+    },
+    {
+      name: "Sam Wilson",
+      location: "Ukraine-ukraine",
+      feedback:
+        "I love sellers work. I requested abundance modifications and he patiently dealt with that. His work is a presidential class. I recommend him to all.",
+      photo: "projects/connect-sm.png",
+    },
+    {
+      name: "Muhammad Abbas",
+      location: "Pakistan-pk",
+      feedback:
+        "Professional and timely. The quality of work is top-notch. I'll definitely be back for more projects.",
+      photo: "feedback/abbas.webp",
+    },
+  ],
 };

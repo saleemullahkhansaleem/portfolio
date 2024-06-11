@@ -10,6 +10,7 @@ import Skills from "./pages/Skills";
 import NavBar from "./componenets/NavBar";
 import GoToTopButton from "./componenets/GoToTopButton/GoToTopButton";
 import PricingPage from "./pages/PricingPage";
+import ClientFeedback from "./pages/ClientFeedback";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -41,6 +42,7 @@ function App() {
       </div>
       <About />
       <div className="w-full  bg-black">
+        <ClientFeedback />
         <Projects />
       </div>
       <Experiences />
