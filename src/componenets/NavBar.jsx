@@ -82,7 +82,7 @@ const NavBar = ({ activeTab }) => {
         id="header"
         className={`w-full h-full md:w-auto md:h-auto fixed p-2 z-40 top-1/2 right-0 md:right-2 xl:right-4 ${
           isMenuVisible ? "flex" : "hidden"
-        } md:flex flex-col items-start md:items-center justify-center -translate-y-1/2 md:rounded backdrop-blur-3xl bg-black/10 md:bg-zinc-800`}
+        } md:flex flex-col items-start md:items-center justify-center -translate-y-1/2 md:rounded backdrop-blur-3xl bg-black/10 md:bg-zinc-800 overflow-auto`}
       >
         {navLinks.map((link) => (
           <a

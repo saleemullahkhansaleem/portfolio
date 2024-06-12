@@ -18,12 +18,12 @@ const ClientFeedback = () => {
 
 const TestimonialCard = ({ testimonial }) => {
   return (
-    <div className="max-w-sm w-full sm:w-72 mx-2 sm:mx-0 rounded bg-black mt-6">
+    <div className="max-w-sm w-full sm:w-72 mx-2 sm:mx-0 rounded bg-black mt-12">
       <div className="px-6 py-4 flex flex-col justify-between h-full gap-4 relative w-full">
         <div className="border-8 border-zinc-900 -mt-[72px] mx-auto rounded-full">
           <div
             title={testimonial?.name}
-            className="w-24 h-24 rounded-full border-2 border-white bg-black overflow-hidden flex justify-center items-center"
+            className="w-24 h-24 rounded-full border-2 border-zinc-500 bg-black overflow-hidden flex justify-center items-center"
           >
             {testimonial?.photo ? (
               <img
