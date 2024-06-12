@@ -42,7 +42,6 @@ function App() {
       </div>
       <About />
       <div className="w-full  bg-black">
-        <ClientFeedback />
         <Projects />
       </div>
       <Experiences />
@@ -53,7 +52,10 @@ function App() {
       <div className="w-full  bg-black">
         <PricingPage />
       </div>
-      <Contact />
+      <ClientFeedback />
+      <div className="w-full  bg-black">
+        <Contact />
+      </div>
       <GoToTopButton />
     </div>
   );

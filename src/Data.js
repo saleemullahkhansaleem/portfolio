@@ -736,7 +736,7 @@ export const Data = {
       location: "Ukraine-ukraine",
       feedback:
         "I love sellers work. I requested abundance modifications and he patiently dealt with that. His work is a presidential class. I recommend him to all.",
-      photo: "projects/connect-sm.png",
+      // photo: "projects/connect-sm.png",
     },
     {
       name: "Muhammad Abbas",

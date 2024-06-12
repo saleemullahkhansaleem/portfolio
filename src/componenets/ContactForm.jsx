@@ -75,7 +75,7 @@ const ContactForm = () => {
         placeholder="Enter your message"
       />
       <div className="mt-4 flex flex-wrap sm:flex-nowrap md:flex-wrap lg:flex-nowrap justify-end gap-4">
-        {!message && (
+        {message && (
           <Toast
             className="w-full sm:w-auto md:w-full lg:w-auto"
             error={message?.error}

@@ -6,6 +6,7 @@ import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { PiStudentFill } from "react-icons/pi";
 import { MdMessage } from "react-icons/md";
 import { IoMdClose, IoMdPricetags } from "react-icons/io";
+import { VscFeedback } from "react-icons/vsc";
 
 const NavBar = ({ activeTab }) => {
   const navLinks = [
@@ -48,6 +49,11 @@ const NavBar = ({ activeTab }) => {
       name: "Pricing",
       id: "pricing",
       icon: IoMdPricetags,
+    },
+    {
+      name: "Feedback",
+      id: "feedback",
+      icon: VscFeedback,
     },
     {
       name: "Contact",
