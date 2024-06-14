@@ -58,11 +58,11 @@ const Projects = () => {
         {project && (
           <div>
             <div className="relative">
-              <div className="flex flex-wrap justify-between items-center sticky right-0 top-0 p-2 w-full backdrop-blur-sm bg-black/30">
+              <div className="flex flex-wrap justify-between items-center gap-2 sticky right-0 top-0 p-2 w-full backdrop-blur-sm bg-black/30">
                 <p className="px-2 text-zinc-500 uppercase">
                   {project.tagline}
                 </p>
-                <div className="flex gap-2 flex-wrap">
+                <div className="flex gap-2 flex-wrap justify-center ml-auto">
                   <Button
                     title="Live"
                     target="_blank"

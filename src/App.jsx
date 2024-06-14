@@ -34,26 +34,36 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-zinc-900 text-white">
+    <div className="bg-black text-white">
       <NavBar activeTab={activeSection} />
-      <Home />
-      <div className="w-full  bg-black">
+      <div className="bg-gradient-to-b from-zinc-900 from-70%">
+        <Home />
+      </div>
+      <div className="w-full bg-black">
         <Services />
       </div>
-      <About />
-      <div className="w-full  bg-black">
+      <div className="bg-gradient-to-b from-zinc-900">
+        <About />
+      </div>
+      <div className="w-full bg-black">
         <Projects />
       </div>
-      <Experiences />
-      <div className="w-full  bg-black">
+      <div className="bg-gradient-to-b from-zinc-900">
+        <Experiences />
+      </div>
+      <div className="w-full bg-black">
         <Skills />
       </div>
-      <Educations />
-      <div className="w-full  bg-black">
+      <div className="bg-gradient-to-b from-zinc-900">
+        <Educations />
+      </div>
+      <div className="w-full bg-black">
         <PricingPage />
       </div>
-      <ClientFeedback />
-      <div className="w-full  bg-black">
+      <div className="bg-zinc-900 ">
+        <ClientFeedback />
+      </div>
+      <div className="w-full bg-black">
         <Contact />
       </div>
       <GoToTopButton />
