@@ -80,16 +80,16 @@ const NavBar = ({ activeTab }) => {
       </div>
       <nav
         id="header"
-        className={`w-full h-full md:w-auto md:h-auto fixed p-2 z-40 top-1/2 right-0 md:right-2 xl:right-4 ${
+        className={`w-full h-full md:w-auto md:h-auto fixed z-40 top-1/2 right-0 md:right-2 xl:right-4 ${
           isMenuVisible ? "flex" : "hidden"
-        } md:flex flex-col items-start md:items-center justify-center -translate-y-1/2 md:rounded backdrop-blur-3xl bg-black/10 md:bg-zinc-800 overflow-auto`}
+        } md:flex flex-col items-start md:items-center justify-center -translate-y-1/2 md:rounded backdrop-blur-3xl bg-black/10 md:bg-zinc-800 overflow-auto md:overflow-visible`}
       >
         {navLinks.map((link) => (
           <a
             key={link.name}
             href={`#${link.id}`}
             onClick={() => setMenuVisibility(false)}
-            className={`group py-4 px-2 flex md:justify-center items-center w-full md:bg-transparent hover:bg-zinc-800 md:hover:bg-transparent text-white ${
+            className={`group py-2 px-3 flex md:justify-center items-center w-full md:bg-transparent hover:bg-zinc-800 md:hover:bg-transparent text-white ${
               activeTab === link.id
                 ? "md:text-lime-500 bg-zinc-800"
                 : "md:text-zinc-500 hover:text-white bg-transparent"
@@ -100,7 +100,7 @@ const NavBar = ({ activeTab }) => {
             >
               {<link.icon />}
             </span>
-            <span className="md:absolute md:right-0 py-1 px-2 text-xs transition-all duration-300 rounded-full md:opacity-0 group-hover:opacity-100 group-hover:md:-translate-x-16">
+            <span className="md:absolute md:right-0 py-1 px-2 text-xs transition-all duration-300 rounded-full md:opacity-0 group-hover:opacity-100 group-hover:md:-translate-x-12">
               {link.name}
             </span>
           </a>
