@@ -18,12 +18,12 @@ const ClientFeedback = () => {
 
 const TestimonialCard = ({ testimonial }) => {
   return (
-    <div className="max-w-sm w-full sm:w-72 mx-2 sm:mx-0 rounded bg-black mt-12">
-      <div className="px-6 py-4 flex flex-col justify-between h-full gap-4 relative w-full">
+    <div className="w-full max-w-sm mx-2 mt-12 bg-black rounded sm:w-72 sm:mx-0">
+      <div className="relative flex flex-col justify-between w-full h-full gap-4 px-6 py-4">
         <div className="border-8 border-zinc-900 -mt-[72px] mx-auto rounded-full">
           <div
             title={testimonial?.name}
-            className="w-24 h-24 rounded-full border-2 border-zinc-500 bg-black overflow-hidden flex justify-center items-center"
+            className="flex items-center justify-center w-24 h-24 overflow-hidden bg-black border-2 rounded-full border-zinc-500"
           >
             {testimonial?.photo ? (
               <img
@@ -40,10 +40,10 @@ const TestimonialCard = ({ testimonial }) => {
           </div>
         </div>
         <div>
-          <div className="text-center text-xl text-white">
+          <div className="text-xl text-center text-white">
             {testimonial?.name}
           </div>
-          <div className="text-zinc-500 text-center text-base flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-2 text-base text-center text-zinc-500">
             <img
               src={`feedback/${testimonial?.location?.split("-")[1]}.png`}
               className="w-5"
@@ -53,7 +53,7 @@ const TestimonialCard = ({ testimonial }) => {
             <span>{testimonial?.location?.split("-")[0]}</span>
           </div>
         </div>
-        <p className="text-zinc-500 text-base text-center">
+        <p className="text-base text-center text-zinc-500">
           {testimonial?.feedback}
         </p>
       </div>
