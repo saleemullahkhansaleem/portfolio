@@ -3,6 +3,27 @@
 @tailwind utilities;
 
 
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #27272a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #71717a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #84cc16;
+}
+
+/* -----Transitions----- */
 @property --progress-value {
     syntax: "<integer>";
     inherits: false;
