@@ -41,11 +41,11 @@ const Projects = () => {
               }}
             >
               <img
-                className="scale-100 group-hover/card:scale-105 ease-in duration-300"
+                className="scale-100 group-hover/card:scale-105 ease-in duration-150"
                 src={project.image}
                 alt={project.name}
               />
-              <div className="absolute bg-black/50 bottom-0 backdrop-blur p-2 w-full transition ease-in-out duration-500">
+              <div className="absolute bg-black/60 bottom-0 backdrop-blur p-2 w-full transition ease-in-out duration-500">
                 {/* <h3 className="">{project.name}</h3> */}
                 <p className="text-xs">{project.tagline}</p>
               </div>

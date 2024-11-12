@@ -1,6 +1,6 @@
 const Container = ({ children, id, className, full }) => {
   return (
-    <div className="flex">
+    <div className="flex py-8">
       <section
         id={id}
         className={`${

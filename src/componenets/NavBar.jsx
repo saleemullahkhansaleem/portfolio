@@ -45,11 +45,11 @@ const NavBar = ({ activeTab }) => {
       id: "educations",
       icon: PiStudentFill,
     },
-    {
-      name: "Pricing",
-      id: "pricing",
-      icon: IoMdPricetags,
-    },
+    // {
+    //   name: "Pricing",
+    //   id: "pricing",
+    //   icon: IoMdPricetags,
+    // },
     {
       name: "Feedback",
       id: "feedback",

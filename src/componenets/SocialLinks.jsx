@@ -1,6 +1,6 @@
 const SocialLinks = ({ className = "", iconSize = "xl", data = [] }) => {
   return (
-    <div className={`flex justify-between w-full ${className}`}>
+    <div className={`flex justify-between w-full max-w-xl ${className}`}>
       {data?.map((item) => (
         <a
           title={item.name}

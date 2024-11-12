@@ -48,7 +48,7 @@ export const Data = {
       name: "HTML",
       icon: FaHtml5,
       iconColor: "text-orange-500",
-      health: "95",
+      health: "90",
     },
     {
       name: "CSS",
@@ -78,7 +78,7 @@ export const Data = {
       name: "Meterial UI ",
       icon: SiMui,
       iconColor: "text-blue-600",
-      health: "75",
+      health: "60",
     },
     {
       name: "Javascript",
@@ -108,13 +108,13 @@ export const Data = {
       name: "WordPress",
       icon: FaWordpress,
       iconColor: "text-sky-900",
-      health: "70",
+      health: "60",
     },
     {
       name: "Figma",
       icon: FaFigma,
       iconColor: "text-white",
-      health: "55",
+      health: "50",
     },
   ],
   projects: [

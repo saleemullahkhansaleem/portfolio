@@ -57,9 +57,9 @@ function App() {
       <div className="bg-gradient-to-b from-zinc-900">
         <Educations />
       </div>
-      <div className="w-full bg-black">
+      {/* <div className="w-full bg-black">
         <PricingPage />
-      </div>
+      </div> */}
       <div className="bg-zinc-900 ">
         <ClientFeedback />
       </div>

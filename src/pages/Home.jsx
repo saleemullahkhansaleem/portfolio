@@ -2,6 +2,8 @@ import { Data } from "../Data";
 import Container from "../componenets/Container";
 import SocialLinks from "../componenets/SocialLinks";
 import NavBar from "../componenets/NavBar";
+import Button from "../componenets/Button";
+import { MdMessage } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -29,7 +31,7 @@ const Home = () => {
           <br />
           <span id="element">A React.js Developer</span>
         </h1>
-        <p className="slogn text-zinc-500">
+        <p className="text-zinc-500">
           Programming is my Love, when I start coding I don't care about a
           thing,
           <br />
@@ -39,6 +41,13 @@ const Home = () => {
 
         {/* <SocialLinks iconSize="2xl" data={Data.contactLinks} className="mt-4" /> */}
         <SocialLinks iconSize="2xl" data={Data.socialLinks} />
+        <Button
+          href="#contact"
+          title="Contact"
+          className="flex gap-2 items-center mt-4"
+        >
+          <MdMessage className="text-lg" /> <span>Contact Me</span>
+        </Button>
       </div>
     </Container>
   );
