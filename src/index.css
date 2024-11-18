@@ -2,57 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* -----Scrollbar----- */
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #27272a;
+  background: #27272a;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #71717a;
+  background: #71717a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #84cc16;
+  background: #84cc16;
 }
 
 /* -----Transitions----- */
 @property --progress-value {
-    syntax: "<integer>";
-    inherits: false;
-    initial-value: 0;
+  syntax: "<integer>";
+  inherits: false;
+  initial-value: 0;
 }
 
 @keyframes progress {
-    to {
-        --progress-value: var(--val);
-    }
+  to {
+    --progress-value: var(--val);
+  }
 }
 
 .skill-animation::before {
-    counter-reset: percentage var(--progress-value);
-    content: counter(percentage);
-    animation: progress 2s 1 forwards;
+  counter-reset: percentage var(--progress-value);
+  content: counter(percentage);
+  animation: progress 2s 1 forwards;
 }
 
 .skill-progress-bar {
-    background: radial-gradient(closest-side,
-            #18181b 89%,
-            transparent 90% 100%),
-        conic-gradient(white calc(var(--progress-value) * 1%), #3f3f46 0);
+  background: radial-gradient(closest-side, #18181b 89%, transparent 90% 100%),
+    conic-gradient(#71717a calc(var(--progress-value) * 1%), #111 0);
 }
 
 .skill-box:hover .skill-progress-bar {
-    background: radial-gradient(closest-side,
-            #18181b 79%,
-            transparent 80% 100%),
-        conic-gradient(#84cc16 calc(var(--progress-value) * 1%), #3f3f46 0);
+  background: radial-gradient(closest-side, #18181b 87%, transparent 88% 100%),
+    conic-gradient(#84cc16 calc(var(--progress-value) * 1%), #111 0);
 }
 
 .skill-animation {
-    animation: progress 2s 1 forwards;
+  animation: progress 2s 1 forwards;
 }

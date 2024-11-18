@@ -1,9 +1,13 @@
 import {
   FaBootstrap,
+  FaCloud,
+  FaCodepen,
   FaCss3Alt,
   FaDatabase,
+  FaDocker,
   FaFacebook,
   FaFigma,
+  FaGit,
   FaGithub,
   FaHtml5,
   FaInstagram,
@@ -15,6 +19,7 @@ import {
   FaPhp,
   FaReact,
   FaSkype,
+  FaStripe,
   FaTiktok,
   FaWhatsapp,
   FaWordpress,
@@ -23,6 +28,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import {
   MdCall,
+  MdCode,
   MdDevices,
   MdMail,
   MdSpeed,
@@ -32,88 +38,98 @@ import { TbBrandFiverr, TbWashDryShade } from "react-icons/tb";
 import {
   SiAdobeillustrator,
   SiAdobephotoshop,
+  SiAxios,
+  SiEslint,
+  SiFramer,
   SiFreelancer,
+  SiGraphql,
+  SiJest,
   SiMongodb,
   SiMui,
   SiNextdotjs,
   SiPostgresql,
+  SiPrettier,
+  SiReactrouter,
   SiRedux,
+  SiStrapi,
   SiTailwindcss,
+  SiTypescript,
   SiUpwork,
+  SiVite,
 } from "react-icons/si";
-import { IoMdColorPalette } from "react-icons/io";
+import { IoIosArrowDown, IoMdColorPalette } from "react-icons/io";
 export const Data = {
   skills: [
     {
       name: "HTML",
       icon: FaHtml5,
-      iconColor: "text-orange-500",
+      color: "border-orange-500",
       health: "90",
     },
     {
       name: "CSS",
       icon: FaCss3Alt,
-      iconColor: "text-blue-500",
+      color: "border-blue-500",
       health: "90",
     },
     {
       name: "Tailwind CSS",
       icon: SiTailwindcss,
-      iconColor: "text-sky-500",
+      color: "border-sky-500",
       health: "95",
     },
     {
       name: "Shadcn/UI",
       icon: TbWashDryShade,
-      iconColor: "text-white",
+      color: "border-white",
       health: "90",
     },
     {
       name: "Bootstrap",
       icon: FaBootstrap,
-      iconColor: "text-purple-500",
+      color: "border-purple-500",
       health: "85",
     },
     {
       name: "Meterial UI ",
       icon: SiMui,
-      iconColor: "text-blue-600",
+      color: "border-blue-600",
       health: "60",
     },
     {
       name: "Javascript",
       icon: FaJs,
-      iconColor: "text-yellow-500",
+      color: "border-yellow-500",
       health: "90",
     },
     {
       name: "ReactJs",
       icon: FaReact,
-      iconColor: "text-sky-500",
+      color: "border-sky-500",
       health: "90",
     },
     {
       name: "Redux",
       icon: SiRedux,
-      iconColor: "text-purple-500",
+      color: "border-purple-500",
       health: "80",
     },
     {
       name: "NextJs",
       icon: SiNextdotjs,
-      iconColor: "text-white",
+      color: "border-white",
       health: "85",
     },
     {
       name: "WordPress",
       icon: FaWordpress,
-      iconColor: "text-sky-900",
+      color: "border-sky-900",
       health: "60",
     },
     {
       name: "Figma",
       icon: FaFigma,
-      iconColor: "text-white",
+      color: "border-white",
       health: "50",
     },
   ],
@@ -181,19 +197,27 @@ export const Data = {
     },
     {
       id: 4,
-      name: "Connect Care Trans",
-      url: "https://connectcaretrans.net/",
-      gitLink: "https://github.com/saleemullahkhansaleem/connect-care",
-      image: "projects/connect-sm.webp",
-      imageFull: "projects/connect-lg.webp",
-      tagline: "Connect care web app",
+      name: "Win Source International",
+      url: "https://winsourceinternational.com.pk/",
+      gitLink:
+        "https://github.com/saleemullahkhansaleem/winsourceinternational.com.pk",
+      image: "projects/wsi-sm.webp",
+      imageFull: "projects/wsi-lg.webp",
+      tagline: "Mine and Minerals platform",
       usedTools: [
+        { name: "React", icon: FaReact },
+        { name: "Redux", icon: SiRedux },
         { name: "HTML", icon: FaHtml5 },
         { name: "CSS", icon: FaCss3Alt },
         { name: "JavaScript", icon: FaJs },
-        { name: "Bootstrap", icon: FaBootstrap },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "Shadcn/UI", icon: TbWashDryShade },
+        { name: "Postgres", icon: SiPostgresql },
+        { name: "Laravel", icon: FaLaravel },
+        { name: "PHP", icon: FaPhp },
       ],
-      description: "Connect care trans web app",
+      description:
+        "Win Source International is a specialized platform designed for the mining and minerals industry. This project combines modern web development techniques with robust back-end architecture to provide a seamless user experience. I utilized React for building dynamic user interfaces and Redux for efficient state management. Tailwind CSS and Shadcn/UI were used to craft a visually appealing and responsive design. The back-end, developed in Laravel and PHP, is powered by a PostgreSQL database for reliable data handling. The platform supports features like product listings, real-time updates, and advanced filtering options tailored to the mining and minerals sector. My contributions included full-stack development, API integrations, and optimization for scalability and performance.",
     },
     {
       id: 5,
@@ -202,30 +226,32 @@ export const Data = {
       gitLink: "",
       image: "projects/msinternational-sm.webp",
       imageFull: "projects/msinternational-lg.webp",
-      tagline: "A multinational trading site",
-      description: "A multinational trading site",
+      tagline: "A multinational trading ecommerce site",
+      usedTools: [
+        { name: "Wordpress", icon: FaWordpress },
+        { name: "HTML", icon: FaHtml5 },
+        { name: "CSS", icon: FaCss3Alt },
+      ],
+      description:
+        "MS International is a comprehensive e-commerce platform designed for a multinational trading business. I was responsible for the full front-end development, ensuring a seamless user experience across all devices with a responsive design. The site was built using WordPress for content management, with HTML and CSS for structure and styling. The platform supports international trade by offering a secure and user-friendly interface for browsing and purchasing various products. I focused on customizing WordPress themes and integrating essential features, such as product catalogs, order management, and payment gateways, to meet the unique needs of MS International's trading operations.",
     },
     {
       id: 6,
-      name: "My Perfect Writing",
-      url: "https://healthpluscost.com",
-      gitLink: "https://github.com/saleemullahkhansaleem",
-      image: "projects/my-perfect-writing-sm.webp",
-      imageFull: "projects/my-perfect-writing-lg.webp",
-      tagline: "A content writting platform",
+      name: "Metal and Gas",
+      url: "https://metalandgas.vercel.app/",
+      gitLink: "https://github.com/saleemullahkhansaleem/mg",
+      image: "projects/mg-sm.webp",
+      imageFull: "projects/mg-lg.webp",
+      tagline: "A complex UI design and animation",
       usedTools: [
-        { name: "React", icon: FaReact },
-        { name: "Redux", icon: SiRedux },
         { name: "HTML", icon: FaHtml5 },
         { name: "CSS", icon: FaCss3Alt },
         { name: "JavaScript", icon: FaJs },
         { name: "Tailwind CSS", icon: SiTailwindcss },
         { name: "Node.js", icon: FaNodeJs },
-        { name: "Express.js", icon: FaNode },
-        { name: "Mongo DB", icon: SiMongodb },
-        { name: "Mongoose", icon: FaDatabase },
       ],
-      description: "A content writting platform",
+      description:
+        "Metal and Gas is a web application showcasing a sophisticated user interface with intricate animations and responsive design. Developed with a combination of modern front-end and back-end technologies, this project highlights advanced UI/UX techniques and seamless performance. The application leverages Tailwind CSS for styling, ensuring a visually appealing and consistent design, while Node.js powers the backend, enabling robust and scalable functionality. This project serves as a testament to the seamless integration of design and development expertise.",
     },
     {
       id: 7,
@@ -254,7 +280,7 @@ export const Data = {
       gitLink: "https://github.com/saleemullahkhansaleem",
       image: "projects/jurhay-shop-site-sm.webp",
       imageFull: "projects/jurhay-shop-site-lg.webp",
-      tagline: "An e commerce platform",
+      tagline: "An e-commerce platform",
       usedTools: [
         { name: "React", icon: FaReact },
         { name: "Next.js", icon: SiNextdotjs },
@@ -265,10 +291,11 @@ export const Data = {
         { name: "Tailwind CSS", icon: SiTailwindcss },
         { name: "Node.js", icon: FaNodeJs },
         { name: "Express.js", icon: FaNode },
-        { name: "Mongo DB", icon: SiMongodb },
+        { name: "MongoDB", icon: SiMongodb },
         { name: "Mongoose", icon: FaDatabase },
       ],
-      description: "An e commerce platform",
+      description:
+        "Jurhay Shop is a robust e-commerce platform designed for seamless online shopping experiences. Built with Next.js and React, the application delivers dynamic and responsive interfaces optimized for performance. Redux ensures state management is efficient, supporting features like user authentication, shopping cart management, and real-time updates. The back-end is powered by Node.js and Express.js, with MongoDB and Mongoose providing a scalable and flexible database solution. Tailwind CSS is used to create a modern and visually appealing design, ensuring the platform is fully responsive. My contributions included full-stack development, API design, and implementing secure payment and inventory management features.",
     },
     {
       id: 9,
@@ -289,22 +316,6 @@ export const Data = {
       description:
         "Developed a dynamic portfolio website for Global Links Technologies, an IT services provider. Leveraging React, Tailwind CSS, and ShadCN/UI, the site features a sleek, responsive design that highlights the company's expertise and services in technology solutions. Built with HTML, CSS, and JavaScript, the website provides a smooth user experience with interactive components and modern UI elements. This project showcases a professional, visually appealing platform tailored for the IT industry, emphasizing usability and responsiveness.",
     },
-    // {
-    //   id: 10,
-    //   name: "Resume",
-    //   url: "http://saleemullahkhansaleem.github.io/resume",
-    //   gitLink: "http://github.com/saleemullahkhansaleem",
-    //   image: "projects/resume-sm.webp",
-    //   imageFull: "projects/resume-lg.webp",
-    //   tagline: "My personal resume",
-    //   usedTools: [
-    //     { name: "HTML", icon: FaHtml5 },
-    //     { name: "CSS", icon: FaCss3Alt },
-    //     { name: "JavaScript", icon: FaJs },
-    //     { name: "Bootstrap", icon: FaBootstrap },
-    //   ],
-    //   description: "My personal resume",
-    // },
   ],
   experiences: [
     {
@@ -494,147 +505,242 @@ export const Data = {
     {
       name: "Development",
       icon: MdDevices,
-      details: "Web Development Services",
+      details: "Advanced Web Development",
       services: [
         {
-          name: "Custom Web Development",
-          description:
-            "Create fully customized websites tailored to your client's specific needs and requirements.",
+          name: "React Single Page Applications",
+          description: "Focus on speed and performance with React-based SPAs.",
           longDescription:
-            "Our custom web development service is tailored to meet the unique needs and requirements of your project. With a focus on innovation and creativity, we collaborate closely with clients to bring their vision to life. From intricate design elements to robust backend functionality, our team ensures that every aspect of your website reflects your brand identity and resonates with your target audience. With a commitment to quality and excellence, we deliver fully customized websites that stand out in today's competitive digital landscape.",
+            "Develop highly optimized Single Page Applications (SPAs) with React, ensuring lightning-fast performance and seamless user experiences. Leveraging React's component-based architecture, we craft intuitive and interactive interfaces tailored to your specific needs. Our SPAs are designed to minimize load times, maximize efficiency, and adapt to evolving business requirements.",
+          uniqueFeatures: [
+            "Reusable and modular components",
+            "Optimized for fast rendering",
+            "Interactive and dynamic user interfaces",
+            "Supports integration with REST and GraphQL APIs",
+            "Scalable architecture for growing applications",
+          ],
+          technologies: [
+            { name: "React", icon: FaReact },
+            { name: "Redux", icon: SiRedux },
+            { name: "React Router", icon: SiReactrouter },
+            { name: "TypeScript", icon: SiTypescript },
+            { name: "Axios", icon: SiAxios },
+            { name: "Vite", icon: SiVite },
+          ],
         },
         {
-          name: "Front-end Development",
-          description:
-            "Develop interactive and user-friendly front-end interfaces using HTML, CSS, and JavaScript.",
+          name: "Next.js Optimized Applications",
+          description: "Large-scale applications with optimized solutions.",
           longDescription:
-            "Front-end development is at the heart of crafting captivating user interfaces and seamless user experiences. Our team specializes in building interactive and user-friendly front-end interfaces using the latest web technologies such as HTML, CSS, and JavaScript. From pixel-perfect designs to intuitive navigation structures, we focus on every detail to ensure that your website captivates and engages your audience. With expertise in responsive design and cross-browser compatibility, we guarantee that your front-end interfaces deliver a consistent and enjoyable user experience across all devices and platforms.",
+            "Build robust, scalable applications with Next.js, combining server-side rendering (SSR), static site generation (SSG), and API routes for ultimate flexibility and performance. Ideal for large-scale projects, our Next.js solutions focus on SEO optimization, fast load times, and seamless user navigation. From e-commerce platforms to complex portals, we ensure a future-proof architecture tailored to your business goals.",
+          uniqueFeatures: [
+            "Server-side rendering for improved SEO",
+            "Static site generation for lightning-fast pages",
+            "API routes for backend integration",
+            "Built-in performance optimizations",
+            "Seamless transitions between pages",
+          ],
+          technologies: [
+            { name: "Next.js", icon: SiNextdotjs },
+            { name: "React", icon: FaReact },
+            { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "Node.js", icon: FaNode },
+            { name: "TypeScript", icon: SiTypescript },
+          ],
         },
         {
-          name: "React Application Development",
+          name: "Custom Web Solutions",
           description:
-            "Build modern and dynamic web applications using the React library for efficient UI rendering.",
+            "Comprehensive solutions, including CMS and other web-related work.",
           longDescription:
-            "Harness the power of React to build modern and dynamic web applications that captivate users and drive engagement. Our React application development service leverages the flexibility and efficiency of the React library to create scalable and performant applications. Whether you're launching a new product or enhancing an existing platform, our team of React experts works closely with you to bring your ideas to life. From seamless UI rendering to state management and component reusability, we ensure that your React applications deliver a superior user experience and meet your business objectives.",
-        },
-        {
-          name: "Single-Page Applications (SPAs)",
-          description:
-            "Develop single-page applications that provide a seamless browsing experience by loading content dynamically.",
-          longDescription:
-            "Revolutionize your web presence with single-page applications (SPAs) that offer a seamless browsing experience and unparalleled performance. Our SPA development service leverages cutting-edge technologies such as React and Angular to create dynamic and responsive applications that load content instantly and provide a native app-like experience. By eliminating page reloads and leveraging client-side rendering, we ensure that your SPA delivers lightning-fast performance and keeps users engaged. Whether you're building a portfolio website, a corporate portal, or an e-commerce platform, our team has the expertise to turn your vision into reality.",
-        },
-        {
-          name: "Progressive Web Apps (PWAs)",
-          description:
-            "Convert websites into PWAs, offering native app-like experiences, offline access, and improved performance.",
-          longDescription:
-            "Embrace the future of web development with progressive web apps (PWAs) that combine the best of web and mobile experiences. Our PWA development service transforms traditional websites into fast, reliable, and engaging applications that work seamlessly across devices and platforms. By leveraging modern web technologies such as service workers and web app manifests, we enable features like offline access, push notifications, and home screen installation, giving users a truly immersive and native-like experience. Whether you're a startup looking to disrupt the market or an established brand seeking to enhance your digital presence, our team can help you unlock the full potential of PWAs.",
+            "Offer a wide range of custom web solutions tailored to diverse business needs. From content management systems (CMS) to bespoke applications, our expertise spans across various technologies to deliver unique and effective web solutions. Whether you need a corporate website, a dynamic portal, or a specialized platform, we ensure high-quality, scalable, and feature-rich results.",
+          uniqueFeatures: [
+            "Custom CMS tailored to your needs",
+            "Scalable and secure architecture",
+            "Responsive and mobile-friendly designs",
+            "Integration with third-party services",
+            "End-to-end development and support",
+          ],
+          technologies: [
+            { name: "WordPress", icon: FaWordpress },
+            { name: "Strapi", icon: SiStrapi },
+            { name: "Node.js", icon: FaNode },
+            { name: "React", icon: FaReact },
+            { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "GraphQL", icon: SiGraphql },
+            { name: "MongoDB", icon: SiMongodb },
+          ],
         },
       ],
     },
     {
       name: "Design",
       icon: IoMdColorPalette,
-      details: "Design and User Experience",
+      details: "Modern Design and UX",
       services: [
         {
           name: "Responsive Design",
           description:
-            "Ensure that websites and applications are optimized for various screen sizes and devices.",
+            "Craft websites that adapt perfectly to all screen sizes and devices.",
           longDescription:
-            "In today's multi-device world, responsive design is essential for ensuring that your website looks and performs flawlessly across all screen sizes and devices. Our responsive design service focuses on creating fluid and adaptable layouts that seamlessly adjust to the user's device, whether it's a desktop, tablet, or smartphone. By prioritizing mobile-first design principles and employing cutting-edge techniques, we guarantee that your website provides an optimal viewing experience for every visitor. From flexible grids to media queries, we take care of the technical intricacies so that you can reach your audience wherever they are.",
+            "Our responsive design services prioritize mobile-first and pixel-perfect implementations, ensuring seamless experiences across devices. Leveraging frameworks like Tailwind CSS and MUI, we deliver designs that are both visually appealing and functionally robust, keeping users engaged.",
+          uniqueFeatures: [
+            "Mobile-first design approach",
+            "Pixel-perfect implementation",
+            "Cross-browser compatibility",
+          ],
+          technologies: [
+            { name: "Tailwind CSS", icon: SiTailwindcss },
+            { name: "MUI", icon: SiMui },
+          ],
         },
         {
-          name: "UI/UX Design",
+          name: "Interactive UI/UX Design",
           description:
-            "Design intuitive and visually appealing user interfaces and user experiences for better engagement.",
+            "Design captivating and user-centric interfaces with Framer Motion and ShadCN.",
           longDescription:
-            "Elevate your digital presence with our UI/UX design service, where form meets function to deliver exceptional user experiences. Our team of designers combines creativity with usability to craft intuitive and visually stunning interfaces that delight users and drive engagement. From wireframing to prototyping, we follow a user-centered design approach to ensure that every interaction feels natural and intuitive. By understanding your target audience and business goals, we create designs that not only look beautiful but also achieve measurable results. Whether you're launching a new product or redesigning an existing platform, we're here to help you make a lasting impression.",
+            "Elevate your brand with visually appealing and interactive user experiences. Our expertise in Framer Motion and ShadCN allows us to create animations and components that enhance usability and engagement, all while adhering to your business objectives.",
+          uniqueFeatures: [
+            "Engaging animations with Framer Motion",
+            "Accessible and intuitive designs",
+            "Focus on user retention and engagement",
+          ],
+          technologies: [
+            { name: "Framer Motion", icon: SiFramer },
+            { name: "ShadCN", icon: FaCodepen },
+          ],
         },
         {
-          name: "Web Accessibility (a11y)",
+          name: "Logo and Branding Design",
           description:
-            "Ensure that your websites are accessible to users with disabilities, following accessibility guidelines.",
+            "Develop unique logos and brand identities for a memorable online presence.",
           longDescription:
-            "Ensure that your website is inclusive and accessible to users of all abilities with our web accessibility (a11y) services. With an increasing focus on digital inclusivity and regulatory requirements such as the Web Content Accessibility Guidelines (WCAG), it's essential to ensure that your website is usable by everyone, regardless of their disabilities or impairments. Our team of accessibility experts conducts thorough audits of your site to identify barriers and compliance issues, and implements solutions to improve accessibility and usability. From ensuring proper semantic markup and keyboard navigation to providing alternative text for images and captions for videos, we help you create a more inclusive web experience that benefits all users.",
-        },
-        {
-          name: "Cross-Browser Compatibility",
-          description:
-            "Test and ensure that websites work seamlessly across different web browsers.",
-          longDescription:
-            "Reach your audience wherever they are with our cross-browser compatibility testing and optimization services. With the proliferation of web browsers and devices, it's crucial to ensure that your website works seamlessly across different platforms and environments. Our team conducts rigorous testing on popular web browsers such as Chrome, Firefox, Safari, and Edge, as well as mobile browsers and devices, to identify and resolve compatibility issues. Whether it's CSS rendering inconsistencies, JavaScript compatibility issues, or performance discrepancies, we ensure that your website delivers a consistent and reliable experience to all users, regardless of their browser or device preferences.",
+            "From crafting logos to designing comprehensive branding solutions, our design services help businesses establish a unique identity. We combine creativity with strategy to ensure that your brand leaves a lasting impression across all digital platforms.",
+          uniqueFeatures: [
+            "Strategic and creative branding",
+            "Consistent visual identity",
+            "High-quality deliverables for digital and print",
+          ],
+          technologies: [
+            { name: "Adobe Illustrator", icon: SiAdobeillustrator },
+            { name: "Adobe Photoshop", icon: SiAdobephotoshop },
+          ],
         },
       ],
     },
     {
       name: "Functionality",
       icon: MdToggleOff,
-      details: "Functionality and Integration",
+      details: "Enhanced Functionality and Integrations",
       services: [
         {
           name: "API Integration",
           description:
-            "Integrate third-party APIs to extend functionality and offer features such as payment gateways, social media integration, and more.",
+            "Integrate third-party services like payment gateways and social media APIs seamlessly.",
           longDescription:
-            "Expand the capabilities of your website or application with seamless API integration that connects your front-end interfaces with third-party services and data sources. Our API integration service allows you to leverage the power of external APIs to enhance functionality, streamline processes, and deliver richer user experiences. Whether you're integrating payment gateways, social media platforms, or data analytics tools, our team has the expertise to handle complex integrations and ensure smooth communication between your front-end and backend systems. With a focus on security, scalability, and reliability, we help you unlock the full potential of API-driven development and stay ahead in today's interconnected digital ecosystem.",
+            "Expand your application's functionality by integrating reliable third-party APIs. Whether it's payment processing, social media, or analytics, our integration services ensure secure and efficient communication between systems, enhancing user experiences.",
+          uniqueFeatures: [
+            "Seamless integration with third-party services",
+            "Secure data exchange with APIs",
+            "Custom API solutions based on business needs",
+          ],
+          technologies: [
+            { name: "REST APIs", icon: FaCloud },
+            { name: "GraphQL", icon: SiGraphql },
+            { name: "Stripe", icon: FaStripe },
+          ],
         },
         {
           name: "E-commerce Solutions",
           description:
-            "Build online stores with secure payment gateways, product catalogs, shopping carts, and inventory management.",
+            "Develop robust e-commerce platforms with secure payment gateways and inventory management.",
           longDescription:
-            "Transform your business with our comprehensive e-commerce solutions that empower you to reach new customers, increase sales, and streamline operations. Our e-commerce development service covers every aspect of online retail, from building secure and user-friendly storefronts to implementing robust backend systems for order management and inventory tracking. Whether you're launching a new e-commerce venture or upgrading an existing platform, our team works closely with you to understand your goals and deliver a tailored solution that meets your unique requirements. With a focus on performance, scalability, and user experience, we help you create a compelling online shopping experience that drives conversions and builds customer loyalty.",
+            "Our e-commerce development service covers everything from product catalogs to secure checkout processes. Utilizing frameworks like Next.js and MongoDB, we deliver scalable solutions tailored to meet the needs of modern online stores, enabling businesses to grow effortlessly.",
+          uniqueFeatures: [
+            "Custom product catalogs and checkout processes",
+            "Seamless payment gateway integration",
+            "Inventory management and order tracking",
+          ],
+          technologies: [
+            { name: "Next.js", icon: SiNextdotjs },
+            { name: "MongoDB", icon: SiMongodb },
+            { name: "Stripe", icon: FaStripe },
+          ],
         },
         {
-          name: "Integration with Backend Services",
+          name: "Headless CMS Integration",
           description:
-            "Collaborate with backend developers to integrate front-end interfaces with server-side services and databases.",
+            "Implement headless CMS systems for greater flexibility and performance.",
           longDescription:
-            "Seamlessly connect your front-end interfaces with backend services and databases to create fully functional web applications with our integration services. Whether you're working with RESTful APIs, GraphQL endpoints, or traditional server-side technologies, our team has the expertise to handle complex integrations and ensure smooth communication between your front-end and backend systems. From authentication and authorization mechanisms to data fetching and manipulation, we implement robust solutions that meet your application's requirements and deliver a seamless user experience. With a focus on performance, security, and scalability, we help you build scalable and maintainable web applications that empower your users and drive business growth.",
-        },
-        {
-          name: "Content Management Systems (CMS)",
-          description:
-            "Develop custom CMS solutions using platforms like WordPress, Drupal, or headless CMS architectures.",
-          longDescription:
-            "Take control of your online content with our custom content management system (CMS) solutions that empower you to create, manage, and publish digital content with ease. Our CMS development service leverages popular platforms like WordPress, Drupal, and Joomla, as well as headless CMS architectures, to provide you with a flexible and scalable content management solution tailored to your needs. Whether you're a blogger, a small business owner, or an enterprise organization, our team can help you build a robust CMS that simplifies content creation, improves workflow efficiency, and enhances your online presence. From content editing and version control to user management and permissions, we provide all the tools you need to take your content strategy to the next level.",
+            "Simplify content management with headless CMS solutions like Strapi and WordPress REST APIs. By decoupling content delivery, we provide fast and flexible platforms that cater to various channels while maintaining ease of use for content creators.",
+          uniqueFeatures: [
+            "Decoupled content management system",
+            "Multi-channel content delivery",
+            "User-friendly interfaces for content creators",
+          ],
+          technologies: [
+            { name: "Strapi", icon: SiStrapi },
+            { name: "WordPress REST API", icon: FaWordpress },
+            { name: "GraphQL", icon: SiGraphql },
+          ],
         },
       ],
     },
     {
       name: "Performance",
       icon: MdSpeed,
-      details: "Performance and Maintenance",
+      details: "Optimization and Maintenance",
       services: [
         {
-          name: "Web Performance Optimization",
+          name: "Performance Optimization",
           description:
-            "Improve website performance through techniques like minification, compression, and lazy loading.",
+            "Enhance website speed with techniques like lazy loading and code splitting.",
           longDescription:
-            "Maximize the speed and efficiency of your website with our web performance optimization service. In today's fast-paced digital landscape, every millisecond counts, and a slow-loading website can lead to lost visitors and revenue. Our team of performance experts conducts a comprehensive audit of your site to identify bottlenecks and areas for improvement. From optimizing images and reducing server response times to implementing caching and lazy loading techniques, we employ a range of strategies to accelerate your site's performance and enhance user experience. With our web performance optimization service, you can ensure that your website delivers lightning-fast performance and stays ahead of the competition.",
+            "Achieve faster load times and improved user experiences with our web performance optimization services. From advanced caching mechanisms to minification and server-side rendering, we ensure your website delivers superior speed and reliability.",
+          uniqueFeatures: [
+            "Faster load times with lazy loading and code splitting",
+            "Optimized assets with minification and compression",
+            "Enhanced server-side rendering (SSR) for quicker page loads",
+          ],
+          technologies: [
+            { name: "Lazy Loading", icon: IoIosArrowDown },
+            { name: "Code Splitting", icon: MdCode },
+            { name: "SSR", icon: SiNextdotjs },
+          ],
         },
         {
-          name: "Website Maintenance",
+          name: "Version Control & Deployment",
           description:
-            "Offer ongoing maintenance and updates to keep websites secure, functional, and up-to-date.",
+            "Streamline deployments with version control systems and CI/CD pipelines.",
           longDescription:
-            "Keep your website running smoothly and securely with our website maintenance services. From routine updates and security patches to performance optimizations and bug fixes, our team provides ongoing support to ensure that your website remains up-to-date, secure, and functional. Whether you need regular content updates, software upgrades, or emergency troubleshooting, we're here to help you maintain your online presence and keep your visitors engaged. With proactive monitoring and responsive support, we help you mitigate risks, minimize downtime, and ensure that your website continues to meet your business objectives.",
+            "Leverage Git and modern deployment workflows to ensure seamless integration and delivery of updates. Our CI/CD strategies minimize downtime and automate testing, enabling faster and more reliable development cycles.",
+          uniqueFeatures: [
+            "Continuous integration and delivery pipelines",
+            "Git version control for seamless collaboration",
+            "Automated testing and rollback capabilities",
+          ],
+          technologies: [
+            { name: "Git", icon: FaGit },
+            { name: "GitHub Actions", icon: FaGithub },
+            { name: "Docker", icon: FaDocker },
+          ],
         },
         {
           name: "Code Review and Refactoring",
           description:
-            "Review existing codebases, identify areas for improvement, and refactor to enhance performance and maintainability.",
+            "Optimize codebases for better performance and maintainability.",
           longDescription:
-            "Improve the quality and maintainability of your codebase with our code review and refactoring services. As your software evolves and grows, it's essential to conduct regular code reviews to identify potential issues, improve code quality, and ensure adherence to best practices. Our team of experienced developers conducts comprehensive code reviews to evaluate code structure, readability, performance, and security. From identifying code smells and performance bottlenecks to recommending refactoring strategies and architectural improvements, we help you optimize your codebase for scalability, maintainability, and future growth. With our code review and refactoring services, you can streamline development workflows, reduce technical debt, and deliver higher-quality software products to your users.",
-        },
-        {
-          name: "Version Control and Deployment",
-          description:
-            "Set up version control (e.g., Git) and implement deployment strategies for continuous integration and deployment (CI/CD).",
-          longDescription:
-            "Streamline your development workflow and ensure smooth deployment processes with our version control and deployment services. With the rise of agile development practices and continuous integration/continuous deployment (CI/CD) pipelines, version control and deployment are essential components of modern software development. Our team helps you set up version control systems such as Git and implement deployment strategies that automate the deployment process and ensure consistent and reliable releases. Whether you're deploying to traditional web servers, cloud platforms, or containerized environments, we provide tailored solutions to meet your deployment needs and accelerate your time to market.",
+            "Ensure code quality and scalability with our comprehensive code review and refactoring services. By addressing inefficiencies and adhering to best practices, we help teams create robust and maintainable software solutions.",
+          uniqueFeatures: [
+            "Improved code quality and structure",
+            "Enhanced scalability and maintainability",
+            "Adherence to best practices and coding standards",
+          ],
+          technologies: [
+            { name: "ESLint", icon: SiEslint },
+            { name: "Prettier", icon: SiPrettier },
+            { name: "Jest", icon: SiJest },
+          ],
         },
       ],
     },

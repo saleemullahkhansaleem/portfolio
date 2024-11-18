@@ -2,7 +2,7 @@ import Container from "../componenets/Container";
 import Heading from "../componenets/Heading";
 import { Data } from "../Data";
 import Button from "../componenets/Button";
-import { FaArrowDown, FaArrowUp, FaSkype, FaWhatsapp } from "react-icons/fa";
+import { FaSkype, FaWhatsapp } from "react-icons/fa";
 import Card from "../componenets/Card";
 import Modal from "../componenets/Modal";
 import { useState } from "react";
@@ -62,7 +62,7 @@ const Services = () => {
               <Card
                 title="View detail"
                 key={index}
-                className="sm:max-w-56 bg-black rounded"
+                className="sm:max-w-80 bg-black rounded"
                 onClick={() => {
                   openModal();
                   setModelData(service);
@@ -70,8 +70,11 @@ const Services = () => {
                 buttonText="View"
               >
                 <div className="p-6">
-                  <h3 className="text-xl">{service.name}</h3>
-                  <p className="mt-4 text-zinc-500">{service.description}</p>
+                  <h3 className="">{service.name}</h3>
+                  <p className="my-2 text-zinc-500">{service.description}</p>
+                  <button className="bg-zinc-800 text-zinc-500 rounded py-1 px-4 text-sm mt-2">
+                    Show details
+                  </button>
                 </div>
               </Card>
             ))}
@@ -80,6 +83,31 @@ const Services = () => {
       ))}
       <Modal isOpen={isOpen} onClose={closeModal} header={modelData?.name}>
         <p className="text-zinc-500">{modelData?.longDescription}</p>
+        {/* Display unique features */}
+        <div className="mt-4">
+          <h4 className="font-semibold text-zinc-300 mb-2">Unique Features:</h4>
+          <ul className="list-disc pl-5 text-zinc-500">
+            {modelData?.uniqueFeatures?.map((feature, idx) => (
+              <li key={idx}>{feature}</li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Display technologies */}
+        <div className="mt-4">
+          <h4 className="font-semibold text-zinc-300 mb-2">Technologies:</h4>
+          <div className="flex gap-2 mt-2">
+            {modelData?.technologies?.map((tech, techIdx) => (
+              <span
+                key={techIdx}
+                className="bg-zinc-800 text-zinc-500 rounded-full py-1 px-4 flex gap-2 items-center text-sm"
+              >
+                {<tech.icon className={``} />} <span>{tech?.name}</span>
+              </span>
+            ))}
+          </div>
+        </div>
+        <hr className="mt-6 border-zinc-800" />
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2">
             <p className="mt-4 text-lg text-lime-500">Contact Me:</p>

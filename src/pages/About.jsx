@@ -1,4 +1,9 @@
-import { FaBookReader, FaHandshake, FaLightbulb } from "react-icons/fa";
+import {
+  FaLightbulb,
+  FaUsers,
+  FaTools,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
 import { FiTarget } from "react-icons/fi";
 import { MdMessage } from "react-icons/md";
 import { IoMdPricetags } from "react-icons/io";
@@ -8,90 +13,90 @@ import Button from "../componenets/Button";
 
 const approachData = [
   {
-    icon: <FaLightbulb />,
+    icon: FaLightbulb,
     title: "Innovation",
     description:
-      "I thrive on the latest trends and tech. This keeps me armed with innovative solutions that keep your project modern and engaging.",
+      "Staying ahead of the curve with cutting-edge tools and practices, I bring fresh ideas to every project to ensure your digital solutions are future-proof.",
   },
   {
-    icon: <FiTarget />,
-    title: "User-Centric",
+    icon: FiTarget,
+    title: "User-Centric Design",
     description:
-      "Interfaces should be intuitive and beautiful. I dig into user behavior insights to create seamless and visually pleasing designs.",
+      "Designing with the user in mind, I focus on creating experiences that are not just visually stunning but also intuitive and functional.",
   },
   {
-    icon: <FaHandshake />,
+    icon: FaUsers,
     title: "Collaboration",
     description:
-      "Your input is golden. I see every project as a team effort, combining your vision with my skills for outstanding results.",
+      "Great results come from great teamwork. I value open communication, actively involving you in every step of the development process.",
   },
   {
-    icon: <FaBookReader />,
-    title: "Learning",
+    icon: FaTools,
+    title: "Adaptability",
     description:
-      "Tech evolves, and so do I. I'm committed to learning and adapting to deliver timeless solutions.",
+      "The tech world evolves fast, and so do I. I continuously refine my skills to deliver solutions that adapt to the ever-changing digital landscape.",
+  },
+  {
+    icon: FaChalkboardTeacher,
+    title: "Continuous Learning",
+    description:
+      "Committed to staying updated, I leverage the latest trends and insights to offer solutions that stand the test of time.",
   },
 ];
 
 const About = () => {
   return (
-    <Container id="about" className="p-4">
-      <Heading title="Who I am" text="About" colorText="Saleem" />
-      <div className="mx-auto">
-        <div className="mx-auto text-zinc-400">
-          <p className="max-w-3xl mx-auto text-center">
-            Hey there! I'm Saleem, a passionate web developer specializing in
-            React. With a love for elegant code and interactive user
-            experiences, I've been on a coding journey for more than 9 years.
-          </p>
-
-          <p className="max-w-3xl mx-auto text-center">
-            <span className="text-white">My focus: </span>
-            Crafting dynamic interfaces using React's magic. But it's not just
-            about code to me. It's about fusing technology with user-centric
-            design.
-          </p>
-        </div>
-        <h2 className="text-3xl text-lime-500 py-8 text-center">Approach</h2>
-        <div className="flex flex-wrap gap-4">
-          {approachData.map((item, index) => (
-            <div key={index} className="p-4 max-w-xl flex bg-zinc-900 rounded">
-              <div className="w-[20%] flex justify-center items-center text-5xl text-zinc-600">
-                {item.icon}
-              </div>
-              <div className="w-[5%] border-l-[1px] border-zinc-700"></div>
-              <div className="about-details-box w-3/4">
-                <h3 className="text-xl">{item.title}</h3>
-                <p className="text-zinc-500">{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <p className="text-zinc-500 pt-6">
-          Let's work together to turn your ideas into captivating digital
-          experiences. Feel free to get in touch for anything from advice to
-          full-on collaborations. <br />
-          <br />
+    <Container id="about" className="p-6">
+      <Heading title="Get to Know Me" text="About" colorText="Saleem" />
+      <div className="text-center text-zinc-400">
+        <p className="max-w-3xl mx-auto">
+          Hi, I'm Saleem, a passionate and detail-oriented web developer with a
+          decade of experience crafting digital solutions. My expertise lies in
+          React, where I combine clean, efficient code with cutting-edge
+          technologies to create interactive and impactful user experiences.
         </p>
-        <div className="flex flex-wrap justify-center gap-2">
-          <Button
-            fill
-            href="#contact"
-            title="Contact"
-            className="flex gap-2 items-center"
-          >
-            <MdMessage className="text-lg" /> <span>Get in Touch</span>
-          </Button>
-          <Button
-            href="#pricing"
-            title="Pricing"
-            className="flex gap-2 items-center"
-          >
-            <IoMdPricetags className="text-lg" />{" "}
-            <span>Check pricing plans</span>
-          </Button>
-        </div>
+        <p className="max-w-3xl mx-auto mt-4">
+          <span className="text-white">What drives me? </span>
+          Transforming ideas into seamless digital realities. I believe in
+          blending technology and creativity to deliver interfaces that not only
+          meet client goals but also delight end users.
+        </p>
       </div>
+
+      <h2 className="text-3xl py-8 text-center">My Approach</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
+        {approachData.map((item, index) => (
+          <div key={index} className="p-6 bg-zinc-900 rounded space-y-2 group">
+            <div className="text-5xl text-zinc-700 mb-4">
+              <item.icon size={52} />
+            </div>
+            <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+            <p className="text-zinc-500">{item.description}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* <p className="text-zinc-500 text-center pt-8">
+        Ready to bring your vision to life? Let’s collaborate and create
+        extraordinary digital experiences together.
+      </p>
+      <div className="flex flex-wrap justify-center gap-4 mt-6">
+        <Button
+          fill
+          href="#contact"
+          title="Contact"
+          className="flex gap-2 items-center"
+        >
+          <MdMessage className="text-lg" /> <span>Get in Touch</span>
+        </Button>
+        <Button
+          href="#pricing"
+          title="Pricing"
+          className="flex gap-2 items-center"
+        >
+          <IoMdPricetags className="text-lg" /> <span>View Pricing Plans</span>
+        </Button>
+      </div> */}
     </Container>
   );
 };

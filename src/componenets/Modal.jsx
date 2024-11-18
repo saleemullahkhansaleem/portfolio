@@ -7,7 +7,7 @@ const Modal = ({ isOpen, onClose, header, children }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-hidden">
       <div className="w-auto max-w-5xl max-h-screen overflow-y-hidden mx-auto my-6 z-50 bg-zinc-900 rounded-lg shadow-lg ">
-        <div className="flex items-start justify-between px-4 py-2">
+        <div className="flex items-start justify-between px-4 py-2 border-b border-zinc-950">
           <h3 className="text-xl font-semibold">{header}</h3>
           <IoClose
             className="text-3xl leading-none font-semibold cursor-pointer hover:text-lime-500"
@@ -15,7 +15,7 @@ const Modal = ({ isOpen, onClose, header, children }) => {
           />
         </div>
         <div
-          className="px-4 pb-4 overflow-y-auto"
+          className="p-4 md:px-8 pb-4 overflow-y-auto"
           style={{ maxHeight: "calc(100vh - 100px)" }}
         >
           {children}

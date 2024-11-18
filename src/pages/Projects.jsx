@@ -41,7 +41,7 @@ const Projects = () => {
               }}
             >
               <img
-                className="scale-100 group-hover/card:scale-105 ease-in duration-150"
+                className="scale-100 group-hover/card:scale-105 ease-in duration-150 object-cover w-full"
                 src={project.image}
                 alt={project.name}
               />
@@ -96,7 +96,7 @@ const Projects = () => {
               {project?.usedTools?.map((tool, index) => (
                 <span
                   key={index}
-                  className="bg-zinc-800 text-white rounded py-1 px-4 flex gap-2 items-center"
+                  className="bg-zinc-800 text-white rounded-full py-1 px-4 flex gap-2 items-center text-sm"
                 >
                   {<tool.icon className={``} />} <span>{tool?.name}</span>
                 </span>

@@ -16,12 +16,12 @@ const Skills = () => {
           {Data.skills.map((item) => (
             <div
               title={item?.name}
-              className="bg-zinc-900 skill-box flex flex-col justify-evenly items-center p-4 rounded-full h-60"
+              className={`bg-zinc-900 skill-box flex flex-col gap-6 items-center p-4 rounded -rotate-6 hover:rotate-0`}
               key={item?.name}
             >
               <div className="flex flex-col items-center justify-center gap-2 m-auto">
-                {<item.icon className={`text-5xl ${item?.iconColor}`} />}
-                <p className="text-zinc-500">{item.name}</p>
+                <item.icon size={40} className={`text-zinc-700`} />
+                <p className="text-zinc-200 text-sm">{item.name}</p>
               </div>
               <div
                 className="skill-progress-bar skill-animation w-24 h-24 rounded-full flex justify-center items-center"
