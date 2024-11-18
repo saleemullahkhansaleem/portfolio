@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Container
       id="home"
-      className="flex flex-wrap justify-between md:min-h-screen"
+      className="flex flex-wrap justify-between md:min-h-screen z-10"
     >
       <div className="flex items-center w-full sm:w-full md:w-4/12">
         <div className="w-48 h-48 m-auto overflow-hidden bg-black rounded md:w-full md:h-auto md:bg-transparent">

@@ -36,7 +36,8 @@ function App() {
   return (
     <div className="bg-black text-white">
       <NavBar activeTab={activeSection} />
-      <div className="bg-gradient-to-b from-zinc-900 from-70%">
+      <div className="bg-gradient-to-b from-zinc-900 from-70% relative">
+        <div className="absolute inset-0 dotted-bg opacity-15 z-0"></div>
         <Home />
       </div>
       <div className="w-full bg-black">

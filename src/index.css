@@ -51,3 +51,8 @@
 .skill-animation {
   animation: progress 2s 1 forwards;
 }
+
+.dotted-bg {
+  background-image: radial-gradient(#84cc16 1px, transparent 1px);
+  background-size: 1.25rem 1.25rem;
+}
