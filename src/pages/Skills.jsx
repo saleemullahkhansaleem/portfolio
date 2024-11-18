@@ -16,7 +16,7 @@ const Skills = () => {
           {Data.skills.map((item) => (
             <div
               title={item?.name}
-              className={`bg-zinc-900 skill-box flex flex-col gap-6 items-center p-4 rounded -rotate-6 hover:rotate-0`}
+              className={`bg-zinc-900 skill-box flex flex-col gap-6 items-center p-4 rounded -rotate-6 hover:rotate-0 transition-transform duration-300`}
               key={item?.name}
             >
               <div className="flex flex-col items-center justify-center gap-2 m-auto">
