@@ -41,10 +41,10 @@ function App() {
         <Home />
       </div>
       <div className="w-full bg-black">
-        <Services />
+        <About />
       </div>
       <div className="bg-gradient-to-b from-zinc-900">
-        <About />
+        <Services />
       </div>
       <div className="w-full bg-black">
         <Projects />
