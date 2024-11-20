@@ -27,10 +27,14 @@ const Contact = () => {
       <div className="w-full flex flex-wrap md:flex-nowrap items-center justify-center gap-4">
         <div className="text-lg flex gap-2">
           <FaLocationDot className="text-lime-500" />
-          <p className="text-sm"> Shinkiari, P.O #21140 Mansehra, Pakistan</p>
+          <p className="text-sm"> G-6/1-4 Aabpara Islamabad</p>
         </div>
         <p className="hidden md:block">|</p>
-        <a href="tel:+923405045889" className="text-lg flex gap-2 hover:underline" title="Call">
+        <a
+          href="tel:+923405045889"
+          className="text-lg flex gap-2 hover:underline"
+          title="Call"
+        >
           <IoCall className=" text-lime-500" />
           <p className="text-sm"> +92 340 5045 889</p>
         </a>

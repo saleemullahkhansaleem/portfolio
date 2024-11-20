@@ -175,8 +175,8 @@ export const Data = {
     {
       id: 3,
       name: "Steadfast Security",
-      url: "https://healthpluscost.com",
-      gitLink: "https://github.com/saleemullahkhansaleem",
+      url: "https://steadfastsecurity.com.pk/",
+      gitLink: "https://github.com/saleemullahkhansaleem/stead-fast",
       image: "projects/steadfast-sm.webp",
       imageFull: "projects/steadfast-lg.webp",
       tagline: "A security guard management system and portfolio ",

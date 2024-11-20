@@ -24,35 +24,33 @@ const Projects = () => {
     <Container
       full
       id="projects"
-      className="flex flex-wrap justify-evenly gap-4 items-center"
+      className="flex flex-wrap justify-evenly gap-4 items-center p-4"
     >
       <Heading title="Some on going projects" text="My" colorText="Projects" />
-      <div>
-        <div className="flex flex-wrap justify-center gap-4 mx-auto max-w-4xl">
-          {Data.projects.map((project, index) => (
-            <Card
-              title={project?.name}
-              key={index}
-              buttonText="View"
-              className="sm:max-w-72 sm:w-72 mx-2 sm:mx-0"
-              onClick={() => {
-                setProject(project);
-                openModal();
-              }}
-            >
-              <img
-                className="scale-100 group-hover/card:scale-105 ease-in duration-150 object-cover w-full"
-                src={project.image}
-                alt={project.name}
-              />
-              <div className="absolute bg-black/60 bottom-0 backdrop-blur p-2 w-full transition ease-in-out duration-500">
-                {/* <h3 className="">{project.name}</h3> */}
-                <p className="text-xs">{project.tagline}</p>
-              </div>
-            </Card>
-          ))}
-          {/* <div className="project-container"></div> */}
-        </div>
+      <div className="flex flex-wrap justify-center gap-4 mx-auto max-w-4xl">
+        {Data.projects.map((project, index) => (
+          <Card
+            title={project?.name}
+            key={index}
+            buttonText="View"
+            className="sm:max-w-72 sm:w-72 mx-2 sm:mx-0"
+            onClick={() => {
+              setProject(project);
+              openModal();
+            }}
+          >
+            <img
+              className="scale-100 group-hover/card:scale-105 ease-in duration-150 object-cover w-full"
+              src={project.image}
+              alt={project.name}
+            />
+            <div className="absolute bg-black/60 bottom-0 backdrop-blur p-2 w-full transition ease-in-out duration-500">
+              {/* <h3 className="">{project.name}</h3> */}
+              <p className="text-xs">{project.tagline}</p>
+            </div>
+          </Card>
+        ))}
+        {/* <div className="project-container"></div> */}
       </div>
       <Modal isOpen={isOpen} onClose={closeModal} header={project?.name}>
         {project && (
