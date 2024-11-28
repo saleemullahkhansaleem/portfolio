@@ -322,7 +322,7 @@ export const Data = {
       title: "Front-end Engineer",
       org: "MHS Tech Ventures Pvt Ltd Islamabad",
       details:
-        "As a senior React developer, I have developed and managed over 10 projects, including complex portals, portfolio websites, and management systems, using React, Tailwind CSS, and ShadCN/UI. My role includes leading the IT team and overseeing UI/UX design, form handling, API integration, and state management with Redux and Redux Toolkit. These projects showcase my ability to deliver high-quality, scalable solutions tailored to diverse business needs",
+        "As a Frontend Engineer, I have developed and managed over 10 projects, including complex portals, portfolio websites, and management systems, using React, Tailwind CSS, and ShadCN/UI. My role includes leading the IT team and overseeing UI/UX design, form handling, API integration, and state management with Redux and Redux Toolkit. These projects showcase my ability to deliver high-quality, scalable solutions tailored to diverse business needs",
       startDate: "Sep 2024",
       endDate: "Present",
     },
@@ -364,7 +364,7 @@ export const Data = {
       title: "BCS Hons (Bachlor In Computer Science)",
       org: "Hazara University Mansehra Pakistan",
       details:
-        "Major Subjects: Data Structure, Analysis of Algorithems,Theory of Automata, Database (DBMS) Relational Database (RDBMS), Operating System, ECommerece, Artificial Intelligence, Modren Programming Languages (MPL), Software Engineering, Graphics and Computer Networking, etc . . .",
+        "Major Subjects: Data Structure, Analysis of Algorithms,Theory of Automata, Database (DBMS) Relational Database (RDBMS), Operating System, ECommerce, Artificial Intelligence, Modern Programming Languages (MPL), Software Engineering, Graphics and Computer Networking, etc . . .",
       startDate: "Mar 2014",
       endDate: "Feb 2018",
     },
