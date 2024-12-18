@@ -13,7 +13,7 @@ import { IoMail } from "react-icons/io5";
 const Services = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [modelData, setModelData] = useState();
-  const [activeTab, setActiveTab] = useState("Development");
+  const [activeTab, setActiveTab] = useState("All");
 
   const openModal = () => {
     setIsOpen(true);
@@ -23,12 +23,29 @@ const Services = () => {
     setIsOpen(false);
   };
 
+  const allServices = Data.servicesCategories.flatMap(
+    (category) => category.services
+  );
+
   return (
     <Container full id="services" className="">
       <Heading title="Services" text="I can" colorText="Do" />
 
       <div className="">
         <nav className="max-w-max mx-auto flex">
+          {/* Add "All" tab */}
+          <button
+            title="All"
+            aria-label="All"
+            className={`py-2 px-4 rounded-t flex items-center gap-2 ${
+              activeTab === "All"
+                ? "bg-zinc-900 text-lime-500 hover:text-lime-500"
+                : "text-zinc-500 hover:text-white"
+            }`}
+            onClick={() => setActiveTab("All")}
+          >
+            <span className="hidden sm:block">All</span>
+          </button>
           {Data.servicesCategories.map((services) => (
             <button
               title={services?.name}
@@ -37,7 +54,7 @@ const Services = () => {
               className={`py-2 px-4 rounded-t flex items-center gap-2 ${
                 activeTab === services.name
                   ? "bg-zinc-900 text-lime-500 hover:text-lime-500"
-                  : " text-zinc-500 hover:text-white"
+                  : "text-zinc-500 hover:text-white"
               }`}
               onClick={() => setActiveTab(services.name)}
             >
@@ -47,18 +64,12 @@ const Services = () => {
           ))}
         </nav>
       </div>
-      {Data.servicesCategories.map((services) => (
-        <div
-          className={`max-w-max mx-auto bg-zinc-900 rounded ${
-            activeTab === services.name ? "block" : "hidden"
-          }`}
-          key={services.name}
-        >
-          <h2 className="mx-auto p-4 text-xl border-b border-black text-zinc-500">
-            {services.details}
-          </h2>
-          <div className="flex justify-center flex-wrap gap-4 p-4">
-            {services.services.map((service, index) => (
+
+      <div className="max-w-max mx-auto bg-zinc-900 rounded">
+        {/* Render all services if "All" tab is active */}
+        {activeTab === "All" && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4">
+            {allServices.map((service, index) => (
               <Card
                 title="View detail"
                 key={index}
@@ -79,8 +90,45 @@ const Services = () => {
               </Card>
             ))}
           </div>
-        </div>
-      ))}
+        )}
+
+        {/* Render services by category */}
+        {Data.servicesCategories.map((services) => (
+          <div
+            className={`${
+              activeTab === services.name ? "block" : "hidden"
+            } max-w-max mx-auto bg-zinc-900 rounded`}
+            key={services.name}
+          >
+            <h2 className="mx-auto p-4 text-xl border-b border-black text-zinc-500">
+              {services.details}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+              {services.services.map((service, index) => (
+                <Card
+                  title="View detail"
+                  key={index}
+                  className="sm:max-w-80 bg-black rounded"
+                  onClick={() => {
+                    openModal();
+                    setModelData(service);
+                  }}
+                  buttonText="View"
+                >
+                  <div className="p-6">
+                    <h3 className="">{service.name}</h3>
+                    <p className="my-2 text-zinc-500">{service.description}</p>
+                    <button className="bg-zinc-800 text-zinc-500 rounded py-1 px-4 text-sm mt-2">
+                      Show details
+                    </button>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
       <Modal isOpen={isOpen} onClose={closeModal} header={modelData?.name}>
         <p className="text-zinc-500">{modelData?.longDescription}</p>
         {/* Display unique features */}

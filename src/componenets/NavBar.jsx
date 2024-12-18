@@ -21,19 +21,19 @@ const NavBar = ({ activeTab }) => {
       icon: BsFillGrid3X3GapFill,
     },
     {
-      name: "About",
-      id: "about",
-      icon: FaUser,
-    },
-    {
       name: "Projects",
       id: "projects",
       icon: IoGrid,
     },
     {
-      name: "Experiences",
-      id: "experiences",
-      icon: FaBriefcase,
+      name: "Feedback",
+      id: "feedback",
+      icon: VscFeedback,
+    },
+    {
+      name: "About",
+      id: "about",
+      icon: FaUser,
     },
     {
       name: "Skills",
@@ -41,20 +41,20 @@ const NavBar = ({ activeTab }) => {
       icon: IoOptions,
     },
     {
-      name: "Educations",
-      id: "educations",
-      icon: PiStudentFill,
+      name: "Experiences",
+      id: "experiences",
+      icon: FaBriefcase,
     },
+    // {
+    //   name: "Educations",
+    //   id: "educations",
+    //   icon: PiStudentFill,
+    // },
     // {
     //   name: "Pricing",
     //   id: "pricing",
     //   icon: IoMdPricetags,
     // },
-    {
-      name: "Feedback",
-      id: "feedback",
-      icon: VscFeedback,
-    },
     {
       name: "Contact",
       id: "contact",

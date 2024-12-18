@@ -41,28 +41,28 @@ function App() {
         <Home />
       </div>
       <div className="w-full bg-black">
-        <About />
-      </div>
-      <div className="bg-gradient-to-b from-zinc-900">
         <Services />
       </div>
-      <div className="w-full bg-black">
+      <div className="bg-gradient-to-t from-zinc-900">
         <Projects />
       </div>
+      <div className="w-full bg-zinc-900">
+        <ClientFeedback />
+      </div>
       <div className="bg-gradient-to-b from-zinc-900">
-        <Experiences />
+        <About />
       </div>
       <div className="w-full bg-black">
         <Skills />
       </div>
-      <div className="bg-gradient-to-b from-zinc-900">
+      {/* <div className="bg-gradient-to-b from-zinc-900">
         <Educations />
-      </div>
-      {/* <div className="w-full bg-black">
+        </div>
+        <div className="w-full bg-black">
         <PricingPage />
-      </div> */}
-      <div className="bg-zinc-900 ">
-        <ClientFeedback />
+        </div> */}
+      <div className="bg-gradient-to-t from-zinc-900">
+        <Experiences />
       </div>
       <div className="w-full bg-black">
         <Contact />

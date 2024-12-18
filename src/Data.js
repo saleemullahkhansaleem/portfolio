@@ -833,31 +833,53 @@ export const Data = {
   testimonials: [
     {
       name: "Nekiani Chelle",
+      username: "nekianichelle",
       location: "United States-us",
+      rating: 5,
       feedback:
         "First time working with seller won't be my last. He was fast, efficient and has fair rates. Thank you Saleem.",
       photo: "feedback/nekianichelle.webp",
+      source: "Fiverr",
+      order: "Bug fixes",
     },
     {
       name: "Syed Ali Shah",
       location: "Pakistan-pk",
+      rating: 5,
       feedback:
         "Absolutely fantastic service! Quick turnaround and exceeded my expectations. Highly recommend.",
       photo: "feedback/ali.png",
+      source: "Mr Saleem",
+      order: "Full Complex Website",
     },
     {
       name: "Sam Wilson",
+      username: "user46842612",
       location: "Ukraine-ukraine",
+      rating: 5,
       feedback:
         "I love sellers work. I requested abundance modifications and he patiently dealt with that. His work is a presidential class. I recommend him to all.",
-      // photo: "projects/connect-sm.png",
+      source: "Fiverr",
+      order: "Responsiveness",
     },
     {
       name: "Muhammad Abbas",
       location: "Pakistan-pk",
+      rating: 5,
       feedback:
         "Professional and timely. The quality of work is top-notch. I'll definitely be back for more projects.",
       photo: "feedback/abbas.webp",
+      source: "Mr Saleem",
+      order: "Frontend Development",
+    },
+    {
+      name: "Byron Lopez",
+      username: "byronlopez132",
+      location: "United States-us",
+      rating: 5,
+      feedback: "Great experience",
+      source: "Fiverr",
+      order: "Web App Development",
     },
   ],
 };
