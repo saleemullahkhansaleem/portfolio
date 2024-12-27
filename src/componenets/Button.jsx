@@ -7,10 +7,12 @@ const Button = ({
   target = "_self",
   title,
   type = "button",
+  ...props
 }) => {
   return href ? (
     <a href={href} target={target} className="">
       <button
+        {...props}
         title={title}
         type={type}
         onClick={onClick}
@@ -25,6 +27,7 @@ const Button = ({
     </a>
   ) : (
     <button
+    {...props}
       title={title}
       type={type}
       onClick={onClick}

@@ -4,6 +4,7 @@ import SocialLinks from "../componenets/SocialLinks";
 import NavBar from "../componenets/NavBar";
 import Button from "../componenets/Button";
 import { MdMessage } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
       className="flex flex-wrap justify-between md:min-h-screen z-10"
     >
       <div className="flex items-center w-full sm:w-full md:w-4/12">
-        <div className="w-48 h-48 m-auto overflow-hidden bg-black rounded md:w-full md:h-auto md:bg-transparent">
+        <div className="w-48 h-48 m-auto overflow-hidden md:overflow-visible bg-black rounded md:w-full md:h-auto md:bg-transparent relative">
+          <div className="absolute inset-0 bg-gradient-to-tr from-lime-500/20 to-lime-500/5 rounded-2xl blur-3xl -z-10" />
           <img
             title="Mr Saleem"
             alt="Profile Image"
@@ -41,13 +43,24 @@ const Home = () => {
 
         {/* <SocialLinks iconSize="2xl" data={Data.contactLinks} className="mt-4" /> */}
         <SocialLinks iconSize="2xl" data={Data.socialLinks} />
-        <Button
-          href="#contact"
-          title="Contact"
-          className="flex gap-2 items-center mt-4"
-        >
-          <MdMessage className="text-lg" /> <span>Contact Me</span>
-        </Button>
+        <div className="flex gap-4">
+          <Button
+            href="#contact"
+            title="Contact"
+            className="flex gap-2 items-center mt-4"
+          >
+            <MdMessage className="text-lg" /> <span>Contact Me</span>
+          </Button>
+          <Button
+            target="_blank"
+            href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=mrsaleem"
+            title="Follow me on Linkedin"
+            className="flex gap-2 items-center mt-4"
+          >
+            <FaLinkedin className="text-lg" />{" "}
+            <span>Follow Me</span>
+          </Button>
+        </div>
       </div>
     </Container>
   );
