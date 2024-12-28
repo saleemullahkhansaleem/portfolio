@@ -3,42 +3,36 @@ const Button = ({
   className = "",
   onClick,
   href,
-  fill,
+  fill = false,
   target = "_self",
   title,
   type = "button",
   ...props
 }) => {
-  return href ? (
-    <a href={href} target={target} className="">
-      <button
-        {...props}
-        title={title}
-        type={type}
-        onClick={onClick}
-        className={`outline-none py-2 px-4 ${
-          fill
-            ? "bg-zinc-200 hover:bg-zinc-400 text-zinc-900"
-            : " bg-zinc-800 hover:bg-zinc-700 text-zinc-100"
-        } rounded transition-all text-sm ${className}`}
-      >
-        {children}
-      </button>
-    </a>
-  ) : (
+  const baseStyles = "outline-none py-2 px-4 rounded transition-all text-sm";
+  const fillStyles = fill
+    ? "bg-lime-600 hover:bg-lime-400 text-zinc-900"
+    : "bg-zinc-800 hover:bg-zinc-700 text-zinc-100";
+  const combinedStyles = `${baseStyles} ${fillStyles} ${className}`;
+
+  const ButtonContent = (
     <button
-    {...props}
+      {...props}
       title={title}
       type={type}
       onClick={onClick}
-      className={`outline-none py-2 px-4 ${
-        fill
-          ? "bg-zinc-200 hover:bg-zinc-400 text-zinc-900"
-          : " bg-zinc-800 hover:bg-zinc-700 text-zinc-100"
-      } rounded transition-all text-sm ${className}`}
+      className={combinedStyles}
     >
       {children}
     </button>
+  );
+
+  return href ? (
+    <a href={href} target={target} className="inline-block">
+      {ButtonContent}
+    </a>
+  ) : (
+    ButtonContent
   );
 };
 

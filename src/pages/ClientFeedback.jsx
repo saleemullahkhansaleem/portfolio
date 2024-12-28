@@ -7,7 +7,7 @@ const ClientFeedback = () => {
   return (
     <Container id="feedback" full>
       <Heading title="Testimonials" text="Clients" colorText="Feedback" />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 max-w-7xl mx-auto mt-8 p-4">
         {Data.testimonials.map((testimonial, index) => (
           <TestimonialCard key={index} testimonial={testimonial} />
         ))}
@@ -38,7 +38,7 @@ const TestimonialCard = ({ testimonial }) => {
   };
 
   return (
-    <div className="w-full bg-zinc-800 text-white rounded-lg shadow-lg p-6 relative">
+    <div className="w-full bg-zinc-950 text-white rounded shadow-lg p-6 relative">
       <img
         src={`./feedback/${testimonial.source
           .replace(" ", "")

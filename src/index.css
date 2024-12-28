@@ -20,37 +20,6 @@
 }
 
 /* -----Transitions----- */
-@property --progress-value {
-  syntax: "<integer>";
-  inherits: false;
-  initial-value: 0;
-}
-
-@keyframes progress {
-  to {
-    --progress-value: var(--val);
-  }
-}
-
-.skill-animation::before {
-  counter-reset: percentage var(--progress-value);
-  content: counter(percentage);
-  animation: progress 2s 1 forwards;
-}
-
-.skill-progress-bar {
-  background: radial-gradient(closest-side, #18181b 89%, transparent 90% 100%),
-    conic-gradient(#71717a calc(var(--progress-value) * 1%), #111 0);
-}
-
-.skill-box:hover .skill-progress-bar {
-  background: radial-gradient(closest-side, #18181b 87%, transparent 88% 100%),
-    conic-gradient(#84cc16 calc(var(--progress-value) * 1%), #111 0);
-}
-
-.skill-animation {
-  animation: progress 2s 1 forwards;
-}
 
 .dotted-bg {
   background-image: radial-gradient(#84cc16 1px, transparent 1px);

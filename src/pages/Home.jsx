@@ -14,7 +14,7 @@ const Home = () => {
     >
       <div className="flex items-center w-full sm:w-full md:w-4/12">
         <div className="w-48 h-48 m-auto overflow-hidden md:overflow-visible bg-black rounded md:w-full md:h-auto md:bg-transparent relative">
-          <div className="absolute inset-0 bg-gradient-to-tr from-lime-500/20 to-lime-500/5 rounded-2xl blur-3xl -z-10" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-lime-500/10 to-lime-500/5 rounded-2xl blur-3xl -z-10" />
           <img
             title="Mr Saleem"
             alt="Profile Image"
@@ -45,6 +45,7 @@ const Home = () => {
         <SocialLinks iconSize="2xl" data={Data.socialLinks} />
         <div className="flex gap-4">
           <Button
+          fill
             href="#contact"
             title="Contact"
             className="flex gap-2 items-center mt-4"
@@ -57,8 +58,7 @@ const Home = () => {
             title="Follow me on Linkedin"
             className="flex gap-2 items-center mt-4"
           >
-            <FaLinkedin className="text-lg" />{" "}
-            <span>Follow Me</span>
+            <FaLinkedin className="text-lg" /> <span>Follow Me</span>
           </Button>
         </div>
       </div>

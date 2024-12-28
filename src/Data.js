@@ -39,6 +39,7 @@ import {
   SiAdobeillustrator,
   SiAdobephotoshop,
   SiAxios,
+  SiChartdotjs,
   SiEslint,
   SiFramer,
   SiFreelancer,
@@ -55,6 +56,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiUpwork,
+  SiVercel,
   SiVite,
 } from "react-icons/si";
 import { IoIosArrowDown, IoMdColorPalette } from "react-icons/io";
@@ -63,74 +65,62 @@ export const Data = {
     {
       name: "HTML",
       icon: FaHtml5,
-      color: "border-orange-500",
-      health: "90",
     },
     {
       name: "CSS",
       icon: FaCss3Alt,
-      color: "border-blue-500",
-      health: "90",
     },
     {
       name: "Tailwind CSS",
       icon: SiTailwindcss,
-      color: "border-sky-500",
-      health: "95",
     },
     {
       name: "Shadcn/UI",
       icon: TbWashDryShade,
-      color: "border-white",
-      health: "90",
     },
     {
       name: "Bootstrap",
       icon: FaBootstrap,
-      color: "border-purple-500",
-      health: "85",
     },
     {
-      name: "Meterial UI ",
+      name: "Meterial UI",
       icon: SiMui,
-      color: "border-blue-600",
-      health: "60",
     },
     {
       name: "Javascript",
       icon: FaJs,
-      color: "border-yellow-500",
-      health: "90",
     },
     {
-      name: "ReactJs",
+      name: "Typescript",
+      icon: SiTypescript,
+    },
+    {
+      name: "Node.js",
+      icon: FaNode,
+    },
+    {
+      name: "React.js",
       icon: FaReact,
-      color: "border-sky-500",
-      health: "90",
+    },
+    {
+      name: "Next.js",
+      icon: SiNextdotjs,
+    },
+    {
+      name: "Vercel",
+      icon: SiVercel,
     },
     {
       name: "Redux",
       icon: SiRedux,
-      color: "border-purple-500",
-      health: "80",
-    },
-    {
-      name: "NextJs",
-      icon: SiNextdotjs,
-      color: "border-white",
-      health: "85",
     },
     {
       name: "WordPress",
       icon: FaWordpress,
-      color: "border-sky-900",
-      health: "60",
     },
     {
       name: "Figma",
       icon: FaFigma,
-      color: "border-white",
-      health: "50",
     },
   ],
   projects: [
@@ -501,6 +491,90 @@ export const Data = {
       icon: SiFreelancer,
     },
   ],
+  // servicesCategories: [
+  //   {
+  //     name: "Development",
+  //     icon: MdDevices,
+  //     details: "Advanced Web Development",
+  //     services: [
+  //       {
+  //         name: "Landing Pages",
+  //         description: "Beautiful and responsive single-page websites.",
+  //         longDescription:
+  //           "Create stunning and fully responsive landing pages tailored to your business goals. Leveraging modern frameworks like React and Next.js, our designs focus on aesthetics and functionality to ensure maximum user engagement and conversions.",
+  //         uniqueFeatures: [
+  //           "SEO-friendly architecture",
+  //           "Mobile-first responsive designs",
+  //           "Fast loading times for better user retention",
+  //           "Custom call-to-action (CTA) integration",
+  //         ],
+  //         technologies: [
+  //           { name: "Next.js", icon: SiNextdotjs },
+  //           { name: "React", icon: FaReact },
+  //           { name: "Tailwind CSS", icon: SiTailwindcss },
+  //           { name: "TypeScript", icon: SiTypescript },
+  //         ],
+  //       },
+  //       {
+  //         name: "SAAS Applications",
+  //         description: "Scalable software solutions for your business needs.",
+  //         longDescription:
+  //           "Develop robust and feature-rich Software as a Service (SAAS) applications tailored to modern business requirements. Using cutting-edge technologies, we ensure seamless performance, user-friendly interfaces, and high scalability.",
+  //         uniqueFeatures: [
+  //           "Multi-tenant architecture",
+  //           "Customizable user interfaces",
+  //           "Integration with third-party APIs",
+  //           "Secure and scalable infrastructure",
+  //         ],
+  //         technologies: [
+  //           { name: "React", icon: FaReact },
+  //           { name: "Redux", icon: SiRedux },
+  //           { name: "Node.js", icon: FaNode },
+  //           { name: "GraphQL", icon: SiGraphql },
+  //         ],
+  //       },
+  //       {
+  //         name: "E-commerce Platforms",
+  //         description:
+  //           "Comprehensive solutions for online stores, from product catalogs to secure checkouts.",
+  //         longDescription:
+  //           "Design and develop feature-packed e-commerce platforms that ensure a seamless shopping experience. From scalable product management to secure payment integrations, our solutions help businesses grow and thrive in the digital marketplace.",
+  //         uniqueFeatures: [
+  //           "Custom product catalog and inventory management",
+  //           "Secure payment gateway integration",
+  //           "Responsive design for mobile and desktop users",
+  //           "SEO optimization for improved visibility",
+  //         ],
+  //         technologies: [
+  //           { name: "Next.js", icon: SiNextdotjs },
+  //           { name: "MongoDB", icon: SiMongodb },
+  //           { name: "Stripe", icon: FaStripe },
+  //           { name: "Tailwind CSS", icon: SiTailwindcss },
+  //         ],
+  //       },
+  //       {
+  //         name: "Custom Dashboards",
+  //         description:
+  //           "Data visualization and analytics tailored to your needs.",
+  //         longDescription:
+  //           "Build interactive and visually appealing dashboards that provide actionable insights. Our custom dashboards are designed for scalability, real-time data updates, and seamless integration with your existing systems.",
+  //         uniqueFeatures: [
+  //           "Real-time data synchronization",
+  //           "Interactive charts and graphs",
+  //           "Customizable UI components",
+  //           "Integration with various APIs and databases",
+  //         ],
+  //         technologies: [
+  //           { name: "React", icon: FaReact },
+  //           { name: "Chart.js", icon: SiChartdotjs },
+  //           { name: "Node.js", icon: FaNode },
+  //           { name: "Tailwind CSS", icon: SiTailwindcss },
+  //         ],
+  //       },
+  //     ],
+  //   },
+  // ],
+
   servicesCategories: [
     {
       name: "Development",

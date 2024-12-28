@@ -29,7 +29,16 @@ const Services = () => {
 
   return (
     <Container full id="services" className="">
-      <Heading title="Services" text="I can" colorText="Do" />
+      <Heading
+        title="What I Can Do for You"
+        text="Offering Expertise in"
+        colorText="Multiple Domains"
+      />
+      <p className="text-center max-w-2xl mx-auto text-zinc-400 mb-8 px-4">
+        I offer versatile skills to bring your ideas to life, from web
+        development to branding and creative solutions, delivering results
+        tailored to your needs.
+      </p>
 
       <div className="">
         <nav className="max-w-max mx-auto flex">
