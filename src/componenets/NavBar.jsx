@@ -80,26 +80,29 @@ const NavBar = ({ activeTab }) => {
       </div>
       <nav
         id="header"
-        className={`w-full h-full md:w-auto md:h-auto fixed z-40 top-1/2 right-0 md:right-2 xl:right-4 py-1 ${
+        className={`w-full h-full md:w-auto md:h-auto fixed z-40 top-1/2 right-0 md:right-2 xl:right-4 py-1 md:max-w-10 ${
           isMenuVisible ? "flex" : "hidden"
-        } md:flex flex-col items-start md:items-center justify-center -translate-y-1/2 md:rounded backdrop-blur-3xl bg-black/10 md:bg-zinc-800 overflow-auto md:overflow-visible`}
+        } md:flex flex-col items-start md:items-end justify-center -translate-y-1/2 md:rounded backdrop-blur-3xl bg-black/10 md:bg-zinc-800 overflow-auto md:overflow-visible`}
       >
         {navLinks.map((link) => (
           <a
             key={link.name}
             href={`#${link.id}`}
             onClick={() => setMenuVisibility(false)}
-            className={`group py-3 px-3 flex md:justify-center items-center w-full md:bg-transparent hover:bg-zinc-800 md:hover:bg-transparent text-white ${
+            className={`group flex md:justify-center items-center w-full md:bg-transparent hover:bg-zinc-800 md:hover:bg-transparent text-white min-w-max ${
               activeTab === link.id
                 ? "md:text-lime-500 bg-zinc-800"
                 : "md:text-zinc-500 hover:text-white bg-transparent"
             }`}
           >
-            <span className={`relative transition-all ease-in duration-200`}>
-              {<link.icon />}
+            <span
+              className={`relative transition-all ease-in duration-200 p-3 md:group-hover:p-5 md:bg-zinc-800 rounded-full`}
+            >
+              {<link.icon className="md:group-hover:size-6" />}
             </span>
-            <span className="px-2 py-1 text-xs transition-all duration-300 rounded-full md:absolute md:right-0 md:opacity-0 group-hover:opacity-100 group-hover:md:-translate-x-12">
+            <span className="px-3 py-[6px] text-xs transition-all duration-300 rounded md:absolute md:right-0 md:opacity-0 group-hover:opacity-100 group-hover:md:-translate-x-20 md:bg-zinc-800">
               {link.name}
+              <div className="absolute top-1/2 -translate-y-1/2 left-full border-[6px] border-transparent border-l-zinc-800"></div>
             </span>
           </a>
         ))}
