@@ -82,7 +82,7 @@ const Services = () => {
               <Card
                 title="View detail"
                 key={index}
-                className="sm:max-w-80 bg-black rounded"
+                className={`sm:max-w-80 bg-black rounded transition-all duration-300`}
                 onClick={() => {
                   openModal();
                   setModelData(service);

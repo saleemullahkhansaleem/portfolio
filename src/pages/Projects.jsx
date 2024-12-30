@@ -24,9 +24,21 @@ const Projects = () => {
     <Container
       full
       id="projects"
-      className="flex flex-wrap justify-evenly gap-4 items-center p-4"
+      className="flex flex-wrap justify-evenly gap-8 items-center p-4"
     >
-      <Heading title="Some on going projects" text="My" colorText="Projects" />
+      <div className="xl:max-w-lg px-4">
+        <Heading
+          title="A Showcase of My Ongoing and Completed Projects"
+          text="My"
+          colorText="Projects Portfolio"
+        />
+        <p className="text-center max-w-3xl mx-auto text-zinc-500 mt-4">
+          Here are some of the projects I've worked on, ranging from personal
+          experiments to professional client work. Each project reflects my
+          skills in design, development, and problem-solving, with a focus on
+          creating responsive, efficient, and user-friendly solutions.
+        </p>
+      </div>
       <div className="flex flex-wrap justify-center gap-4 mx-auto max-w-4xl">
         {Data.projects.map((project, index) => (
           <Card
@@ -45,12 +57,10 @@ const Projects = () => {
               alt={project.name}
             />
             <div className="absolute bg-black/60 bottom-0 backdrop-blur p-2 w-full transition ease-in-out duration-500">
-              {/* <h3 className="">{project.name}</h3> */}
               <p className="text-xs">{project.tagline}</p>
             </div>
           </Card>
         ))}
-        {/* <div className="project-container"></div> */}
       </div>
       <Modal isOpen={isOpen} onClose={closeModal} header={project?.name}>
         {project && (
