@@ -41,6 +41,7 @@ import {
   SiAxios,
   SiChartdotjs,
   SiEslint,
+  SiExpress,
   SiFramer,
   SiFreelancer,
   SiGraphql,
@@ -126,6 +127,60 @@ export const Data = {
   projects: [
     {
       id: 1,
+      name: "Damaan Engineering & Services",
+      url: "http://damaan.com.pk/",
+      gitLink: "",
+      image: "projects/damaan-sm.webp",
+      imageFull: "projects/damaan-lg.webp",
+      tagline: "Power & Engineering Solutions Provider",
+      usedTools: [
+        { name: "React", icon: FaReact },
+        { name: "JavaScript", icon: FaJs },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "Shadcn/UI", icon: TbWashDryShade },
+        { name: "Node.js", icon: FaNodeJs },
+        { name: "Express", icon: SiExpress },
+        { name: "MongoDB", icon: SiMongodb },
+      ],
+      description:
+        "Developed the Damaan Engineering & Services website, showcasing their expertise in power generators, HT/LT panels, control systems, and power distribution solutions. Built with React, Node.js, Express, and MongoDB, the platform provides information on their sales, services, parts, and rental solutions, ensuring seamless energy management and operational efficiency.",
+    },
+    {
+      id: 2,
+      name: "DEED (Drive for Economic and Environmental Development)",
+      url: "http://deed.com.pk/",
+      gitLink: "",
+      image: "projects/deed-sm.webp",
+      imageFull: "projects/deed-lg.webp",
+      tagline: "A Non-Profit for Sustainable Development",
+      usedTools: [
+        { name: "React", icon: FaReact },
+        { name: "JavaScript", icon: FaJs },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "Shadcn/UI", icon: TbWashDryShade },
+      ],
+      description:
+        "Designed and developed the DEED website, a non-profit organization dedicated to alleviating poverty and improving living standards through sustainable development initiatives. Built with React, Tailwind CSS, and ShadCN/UI, the site effectively communicates DEED’s mission and projects, engaging donors and stakeholders.",
+    },
+    {
+      id: 3,
+      name: "Go For Green Revolution (GGR)",
+      url: "http://goforgreenrevolution.com.pk/",
+      gitLink: "",
+      image: "projects/ggr-sm.webp",
+      imageFull: "projects/ggr-lg.webp",
+      tagline: "Environmental & Management Consultancy",
+      usedTools: [
+        { name: "React", icon: FaReact },
+        { name: "JavaScript", icon: FaJs },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "Shadcn/UI", icon: TbWashDryShade },
+      ],
+      description:
+        "Built the Go For Green Revolution website, a consulting firm specializing in environmental, management, economic, and technical consultancy services across public, social, and private sectors. Developed using React, Tailwind CSS, and ShadCN/UI to ensure a clean and professional design that highlights their consultancy expertise.",
+    },
+    {
+      id: 4,
       name: "MHS Tech Ventures",
       url: "http://mhstechventures.com/",
       gitLink: "https://github.com/saleemullahkhansaleem/mhs",
@@ -144,7 +199,7 @@ export const Data = {
         "Developed the MHS Tech Venture website, a professional IT services company, using React, Tailwind CSS, and ShadCN/UI for a sleek, modern design and user experience. The site features an interactive services section, a testimonial carousel, and animated components powered by Framer Motion, highlighting their expertise in software consultancy, web development, and mobile solutions.",
     },
     {
-      id: 2,
+      id: 5,
       name: "TZ Education Provider",
       url: "https://tzed.org/",
       gitLink: "https://github.com/saleemullahkhansaleem/tz-edu-provider",
@@ -163,7 +218,7 @@ export const Data = {
         "Developed a responsive, modern website for TZ Education Provider, an Australian organization specializing in educational services. Built using React, Tailwind CSS, and ShadCN/UI, the website features a streamlined, user-friendly design optimized for accessibility and visual appeal. Leveraging HTML, CSS, and JavaScript, the project highlights dynamic content presentation and seamless navigation to enhance the user experience for students and educators alike.",
     },
     {
-      id: 3,
+      id: 6,
       name: "Steadfast Security",
       url: "https://steadfastsecurity.com.pk/",
       gitLink: "https://github.com/saleemullahkhansaleem/stead-fast",
@@ -186,7 +241,7 @@ export const Data = {
         "Developed a comprehensive security guard management system and portfolio website, Steadfast Security. The platform integrates powerful front-end technologies like React, Redux, and Tailwind CSS with ShadCN/UI to create an efficient, responsive, and visually engaging user interface. Utilizing Laravel, PHP, and PostgreSQL on the backend, the site features robust data management capabilities, allowing seamless handling of security guard schedules, client information, and service records. This project emphasizes both functionality and aesthetics, creating a professional, user-friendly experience for security service providers.",
     },
     {
-      id: 4,
+      id: 7,
       name: "Win Source International",
       url: "https://winsourceinternational.com.pk/",
       gitLink:
@@ -210,7 +265,7 @@ export const Data = {
         "Win Source International is a specialized platform designed for the mining and minerals industry. This project combines modern web development techniques with robust back-end architecture to provide a seamless user experience. I utilized React for building dynamic user interfaces and Redux for efficient state management. Tailwind CSS and Shadcn/UI were used to craft a visually appealing and responsive design. The back-end, developed in Laravel and PHP, is powered by a PostgreSQL database for reliable data handling. The platform supports features like product listings, real-time updates, and advanced filtering options tailored to the mining and minerals sector. My contributions included full-stack development, API integrations, and optimization for scalability and performance.",
     },
     {
-      id: 5,
+      id: 8,
       name: "MS International",
       url: "https://msinternational.com.pk/",
       gitLink: "",
@@ -226,7 +281,7 @@ export const Data = {
         "MS International is a comprehensive e-commerce platform designed for a multinational trading business. I was responsible for the full front-end development, ensuring a seamless user experience across all devices with a responsive design. The site was built using WordPress for content management, with HTML and CSS for structure and styling. The platform supports international trade by offering a secure and user-friendly interface for browsing and purchasing various products. I focused on customizing WordPress themes and integrating essential features, such as product catalogs, order management, and payment gateways, to meet the unique needs of MS International's trading operations.",
     },
     {
-      id: 6,
+      id: 9,
       name: "Metal and Gas",
       url: "https://metalandgas.vercel.app/",
       gitLink: "https://github.com/saleemullahkhansaleem/mg",
@@ -244,7 +299,7 @@ export const Data = {
         "Metal and Gas is a web application showcasing a sophisticated user interface with intricate animations and responsive design. Developed with a combination of modern front-end and back-end technologies, this project highlights advanced UI/UX techniques and seamless performance. The application leverages Tailwind CSS for styling, ensuring a visually appealing and consistent design, while Node.js powers the backend, enabling robust and scalable functionality. This project serves as a testament to the seamless integration of design and development expertise.",
     },
     {
-      id: 7,
+      id: 10,
       name: "Red Bridge",
       url: "https://redbridgefire.com/",
       gitLink: "https://github.com/saleemullahkhansaleem/red-bridge",
@@ -264,7 +319,7 @@ export const Data = {
         "Developed a professional website for Red Bridge, a company specializing in fire and security solutions. Built with React, Redux, and Bootstrap, the site combines robust functionality with a sleek design, ensuring a user-friendly experience across devices. The use of MUI and CSS enhances the visual appeal and responsiveness, while JavaScript adds interactivity to key sections, effectively showcasing Red Bridge's services in fire protection and security management. This project highlights advanced UI/UX techniques tailored for the safety industry.",
     },
     {
-      id: 8,
+      id: 11,
       name: "Jurhay Shop",
       url: "https://my-medi-vercel.vercel.app/",
       gitLink: "https://github.com/saleemullahkhansaleem",
@@ -288,7 +343,7 @@ export const Data = {
         "Jurhay Shop is a robust e-commerce platform designed for seamless online shopping experiences. Built with Next.js and React, the application delivers dynamic and responsive interfaces optimized for performance. Redux ensures state management is efficient, supporting features like user authentication, shopping cart management, and real-time updates. The back-end is powered by Node.js and Express.js, with MongoDB and Mongoose providing a scalable and flexible database solution. Tailwind CSS is used to create a modern and visually appealing design, ensuring the platform is fully responsive. My contributions included full-stack development, API design, and implementing secure payment and inventory management features.",
     },
     {
-      id: 9,
+      id: 12,
       name: "Global Links Technologies",
       url: "https://globallinkstechnologies.com/",
       gitLink: "https://github.com/saleemullahkhansaleem/global-links-tech",
