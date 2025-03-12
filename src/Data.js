@@ -906,6 +906,17 @@ export const Data = {
   },
   testimonials: [
     {
+      name: "kavya Gaur",
+      username: "kavya_gaur",
+      location: "India-in",
+      rating: 5,
+      feedback:
+        "Excellent and fast service! They exceeded my expectations with their professionalism and attention to detail. Their dedication and efficiency made the experience seamless. I’ll definitely hire them again in the future. Highly recommended!",
+      photo: "feedback/kavya.webp",
+      source: "Fiverr",
+      order: "Frontend Development",
+    },
+    {
       name: "Nekiani Chelle",
       username: "nekianichelle",
       location: "United States-us",
