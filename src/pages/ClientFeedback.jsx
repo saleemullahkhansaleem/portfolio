@@ -1,4 +1,3 @@
-import React from "react";
 import { Data } from "../Data";
 import Heading from "../componenets/Heading";
 import Container from "../componenets/Container";
@@ -7,7 +6,7 @@ const ClientFeedback = () => {
   return (
     <Container id="feedback" full>
       <Heading title="Testimonials" text="Clients" colorText="Feedback" />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 max-w-7xl mx-auto mt-8 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4 max-w-7xl mx-auto mt-8 p-4">
         {Data.testimonials.map((testimonial, index) => (
           <TestimonialCard key={index} testimonial={testimonial} />
         ))}

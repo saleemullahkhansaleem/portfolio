@@ -8,7 +8,7 @@ import Modal from "../componenets/Modal";
 import { useState } from "react";
 import { SiFreelancer, SiUpwork } from "react-icons/si";
 import { TbBrandFiverr } from "react-icons/tb";
-import { IoMail } from "react-icons/io5";
+import { IoCall, IoMail } from "react-icons/io5";
 
 const Services = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -187,11 +187,11 @@ const Services = () => {
               </Button>
               <Button
                 target="_blank"
-                href="https://join.skype.com/invite/pXBYBspa6eUI"
+                href="tel:+923405045889"
                 className="flex gap-2 items-center"
               >
-                <FaSkype />
-                <span>Skype</span>
+                <IoCall />
+                <span>Call</span>
               </Button>
             </div>
           </div>

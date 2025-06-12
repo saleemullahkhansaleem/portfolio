@@ -27,13 +27,13 @@ const Home = () => {
         {/* <SocialLinks className="mt-4" iconSize="lg" data={Data.socialLinks} /> */}
       </div>
       <div className="flex flex-col justify-center w-full gap-10 p-8 md:w-8/12">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
           Hi From <br />
           <span className="text-lime-500">Saleemullah Khan Saleem,</span>
           <br />
           <span id="element">A React.js Developer</span>
         </h1>
-        <p className="text-zinc-500">
+        <p className="text-zinc-500 text-sm">
           Programming is my Love, when I start coding I don't care about a
           thing,
           <br />

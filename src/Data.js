@@ -525,11 +525,11 @@ export const Data = {
       url: "mailto:salikhanswati@gmail.com",
       icon: MdMail,
     },
-    {
-      name: "Skype",
-      url: "https://join.skype.com/invite/pXBYBspa6eUI",
-      icon: FaSkype,
-    },
+    // {
+    //   name: "Skype",
+    //   url: "https://join.skype.com/invite/pXBYBspa6eUI",
+    //   icon: FaSkype,
+    // },
     {
       name: "Fiverr",
       url: "https://fiverr.com/saliyousafzai",
@@ -982,16 +982,16 @@ export const Data = {
       source: "Fiverr",
       order: "Bug fixes",
     },
-    {
-      name: "Syed Ali Shah",
-      location: "Pakistan-pk",
-      rating: 5,
-      feedback:
-        "Absolutely fantastic service! Quick turnaround and exceeded my expectations. Highly recommend.",
-      photo: "feedback/ali.png",
-      source: "Mr Saleem",
-      order: "Full Complex Website",
-    },
+    // {
+    //   name: "Syed Ali Shah",
+    //   location: "Pakistan-pk",
+    //   rating: 5,
+    //   feedback:
+    //     "Absolutely fantastic service! Quick turnaround and exceeded my expectations. Highly recommend.",
+    //   photo: "feedback/ali.png",
+    //   source: "Mr Saleem",
+    //   order: "Full Complex Website",
+    // },
     {
       name: "Sam Wilson",
       username: "user46842612",
@@ -1002,16 +1002,16 @@ export const Data = {
       source: "Fiverr",
       order: "Responsiveness",
     },
-    {
-      name: "Muhammad Abbas",
-      location: "Pakistan-pk",
-      rating: 5,
-      feedback:
-        "Professional and timely. The quality of work is top-notch. I'll definitely be back for more projects.",
-      photo: "feedback/abbas.webp",
-      source: "Mr Saleem",
-      order: "Frontend Development",
-    },
+    // {
+    //   name: "Muhammad Abbas",
+    //   location: "Pakistan-pk",
+    //   rating: 5,
+    //   feedback:
+    //     "Professional and timely. The quality of work is top-notch. I'll definitely be back for more projects.",
+    //   photo: "feedback/abbas.webp",
+    //   source: "Mr Saleem",
+    //   order: "Frontend Development",
+    // },
     {
       name: "Byron Lopez",
       username: "byronlopez132",

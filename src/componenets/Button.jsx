@@ -9,7 +9,7 @@ const Button = ({
   type = "button",
   ...props
 }) => {
-  const baseStyles = "outline-none py-2 px-4 rounded transition-all text-sm";
+  const baseStyles = "outline-none py-2 px-4 rounded transition-all";
   const fillStyles = fill
     ? "bg-lime-600 hover:bg-lime-400 text-zinc-900"
     : "bg-zinc-800 hover:bg-zinc-700 text-zinc-100";
@@ -28,7 +28,7 @@ const Button = ({
   );
 
   return href ? (
-    <a href={href} target={target} className="inline-block">
+    <a href={href} target={target} className="inline-block text-sm">
       {ButtonContent}
     </a>
   ) : (
