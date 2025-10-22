@@ -364,8 +364,16 @@ export const Data = {
   ],
   experiences: [
     {
+      title: "React / Node.js Developer",
+      org: "Creative Garage (Pvt.) Ltd. Islamabad",
+      details:
+        "As a React / Node.js Developer, I am working on multiple SaaS products, as well as management systems and a variety of customer-based projects using Next.js, Tailwind CSS, Shadcn/UI, Node.js, Express, MongoDB, Supabase, and related technologies. My role involves developing scalable applications, handling both front-end and back-end tasks, and delivering high-quality, modern solutions tailored to client requirements.",
+      startDate: "July 2025",
+      endDate: "Present",
+    },
+    {
       title: "Front-end Engineer",
-      org: "MHS Tech Ventures Pvt Ltd Islamabad",
+      org: "MHS Tech Ventures (Pvt.) Ltd. Islamabad",
       details:
         "As a Frontend Engineer, I have developed and managed over 10 projects, including complex portals, portfolio websites, and management systems, using React, Tailwind CSS, and ShadCN/UI. My role includes leading the IT team and overseeing UI/UX design, form handling, API integration, and state management with Redux and Redux Toolkit. These projects showcase my ability to deliver high-quality, scalable solutions tailored to diverse business needs",
       startDate: "Sep 2024",
